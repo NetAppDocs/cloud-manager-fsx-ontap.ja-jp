@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: use/task-manage-fsx-volumes.html 
+keywords: fsx for ontap, fsx, aws, delete volumes, delete nfs volumes, delete cifs volumes, tiering policy, mount path, get mount path, mount volume, delete volumes, snapshots, edit volume, clone volume, clone 
+summary: Cloud Manager を使用して、 ONTAP のボリューム、クローン、 Snapshot の管理、および FSX for の階層化ポリシーの変更を行うことができます。 
+---
+= Amazon FSX for ONTAP のボリュームを管理します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cloud Manager を使用して、 ONTAP のボリューム、クローン、 Snapshot の管理、および FSX for の階層化ポリシーの変更を行うことができます。
+
+
+
+== ボリュームを編集します
+
+作成したボリュームはいつでも変更できます。
+
+.手順
+. 作業環境を開きます。
+. 音量メニューを開き、「 * 編集 * 」を選択します。
++
+.. NFS の場合、サイズとタグを変更できます。
+.. CIFS の場合、共有名、ユーザ、権限、および Snapshot ポリシーを必要に応じて変更できます。
+
+
+. [ 適用（ Apply ） ] をクリックします。
+
+
+
+
+== ボリュームをクローニングする
+
+ボリュームを作成したら、新しい Snapshot から読み書き可能な新しいボリュームを作成できます。
+
+.手順
+. 作業環境を開きます。
+. 音量メニューを開き、 * Clone * を選択します。
+. クローンボリュームの名前を入力します。
+. [* Clone* ] をクリックします。
+
+
+
+
+== Snapshot コピーを管理します
+
+Snapshot コピーは、ボリュームのポイントインタイムコピーを提供します。Snapshot コピーを作成し、そのデータを新しいボリュームにリストアします。
+
+.手順
+. 作業環境を開きます。
+. ボリュームメニューを開き、 Snapshot コピーの管理に使用できるオプションのいずれかを選択します。
++
+** * Snapshot コピーを作成します *
+** * Snapshot コピーからのリストア *
+
+
+. プロンプトに従って、選択した操作を完了します。
+
+
+
+
+== 階層化ポリシーを変更します
+
+ボリュームの階層化ポリシーを変更します。
+
+.手順
+. 作業環境を開きます。
+. ボリュームメニューを開き、 * 階層化ポリシーの変更 * を選択します。
+. 新しいボリューム階層化ポリシーを選択し、 * Change * をクリックします。
+
+
+
+
+== データをレプリケートして同期
+
+Cloud Manager を使用して、ストレージ環境間でデータをレプリケートできます。ONTAP レプリケーション用に FSX を構成するには、を参照してください https://docs.netapp.com/us-en/cloud-manager-replication/https://docs.netapp.com/us-en/occm/task-replicating-data.html["システム間でのデータのレプリケーション"^]。
+
+Cloud Manager の Cloud Sync を使用して、同期関係を作成できます。同期関係を設定するには、を参照してください https://docs.netapp.com/us-en/cloud-manager-sync/https://docs.netapp.com/us-en/occm/task-sync-quick-start.html["同期関係を作成する"^]。
+
+
+
+== ボリュームを削除します
+
+不要になったボリュームを削除します。
+
+以前に SnapMirror 関係に含まれていたボリュームは、 Cloud Manager を使用して削除することはできません。SnapMirror ボリュームは、 AWS 管理コンソールまたは CLI を使用して削除する必要があります。
+
+.手順
+. 作業環境を開きます。
+. 音量メニューを開き、「 * 削除」を選択します。
+. 作業環境の名前を入力し、ボリュームを削除することを確認します。ボリュームが Cloud Manager から完全に削除されるまでに最大 1 時間かかることがあります。
+
+
+
+NOTE: クローンボリュームを削除しようとするとエラーが表示されます。

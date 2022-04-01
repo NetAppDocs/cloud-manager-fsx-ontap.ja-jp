@@ -1,0 +1,175 @@
+---
+sidebar: sidebar 
+permalink: use/task-creating-fsx-working-environment.html 
+keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment 
+summary: Cloud Manager では、 ONTAP 作業環境用の FSX を作成して、ボリュームの追加や追加のデータサービスの管理を行うことができます。 
+---
+= Amazon FSX for ONTAP 作業環境の作成と管理
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cloud Manager を使用すると、ボリュームや追加のデータサービスを追加および管理するために、 ONTAP 作業環境用の FSX を作成および管理できます。
+
+
+
+== ONTAP 作業環境用の Amazon FSX を作成します
+
+最初のステップは、 ONTAP 作業環境用の FSX を作成することです。AWS 管理コンソールですでに ONTAP ファイルシステム用の FSX を作成している場合は、次の操作を実行できます link:task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["Cloud Manager で IT を詳細に確認"]。
+
+Cloud Manager で FSX for ONTAP の作業環境を作成する前に、次のものが必要です。
+
+* Cloud Manager に ONTAP 作業環境用の FSX の作成に必要な権限を付与する IAM ロールの ARN 。を参照してください link:task-setting-up-permissions-fsx.html["Cloud Manager に AWS クレデンシャルを追加しています"] を参照してください。
+* ONTAP インスタンスの FSX を作成する場所のリージョンおよび VPN 情報。
+
+
+.手順
+. Cloud Manager で、新しい作業環境を追加し、場所 * Amazon Web Services * を選択して、 * Next * をクリックします。
+. Amazon FSX for ONTAP * を選択し、 * Next * をクリックします。
++
+image:screenshot_add_fsx_working_env.png["Amazon FSX for ONTAP の作業環境を追加するスクリーンショット"]
+
+. Cloud Manager で ONTAP の FSX を認証します。
++
+.. ご使用のアカウントに、 FSX for ONTAP に対する適切な AWS 権限を持つ既存の IAM ロールがある場合は、ドロップダウンからそのロールを選択します。
++
+image:screenshot-fsx-assume-role-present.png["AWS のロールのドロップダウンを示すスクリーンショット"]
+
+.. アカウントに IAM ロールがない場合は、 * クレデンシャルページ * をクリックし、ウィザードの手順に従って、 ONTAP クレデンシャル用の FSX を使用して AWS IAM ロールの ARN を追加します。を参照してください link:task-setting-up-permissions-fsx.html["Cloud Manager に AWS クレデンシャルを追加しています"] を参照してください。
++
+image:screenshot-fsx-assume-role-not-present.png["ONTAP 権限用に FSX を使用して AWS IAM ロールの ARN を追加する手順のスクリーンショット。"]
+
+
+
+. ONTAP インスタンスの FSX に関する情報を入力します。
++
+.. 使用する作業環境名を入力します。
+.. 必要に応じて、プラス記号をクリックし、タグの名前と値を入力してタグを作成できます。
+.. 使用する ONTAP クラスタのパスワードを入力し、確認のためにもう一度入力します。
+.. SVM ユーザに同じパスワードを使用するか、別のパスワードを設定するかを選択します。
+.. 「 * 次へ * 」をクリックします。
++
+image:screenshot_add_fsx_credentials.png["FSX for ONTAP のクレデンシャルを追加するスクリーンショット"]
+
+
+
+. リージョンと VPC の情報を指定します。
++
+.. 各ノードが専用のアベイラビリティゾーンに配置されるように、少なくとも 2 つのアベイラビリティゾーンのサブネットを使用するリージョンと VPC を選択します。
+.. デフォルトのセキュリティグループをそのまま使用するか、別のセキュリティグループを選択します。 link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["AWS セキュリティグループ"^] インバウンドおよびアウトバウンドトラフィックを制御します。これらの情報は AWS 管理者が設定し、に関連付けます link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS Elastic Network Interface （ ENI ）"^]。
+.. 各ノードのアベイラビリティゾーンとサブネットを選択してください。
+.. 「 * 次へ * 」をクリックします。
++
+image:screenshot_add_fsx_region.png["ONTAP 向け FSX にリージョンと VPC を追加するスクリーンショット"]
+
+
+
+. _cidr Range_Empty を選択し、 * Next * をクリックすると、使用可能な範囲が自動的に設定されます。必要に応じて、を使用できます https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-transit-gateway.html["AWS 転送ゲートウェイ"^] 範囲を手動で設定します。
++
+image:screenshot_add_fsx_floatingIP.png["ONTAP 向け FSX にリージョンと VPC を追加するスクリーンショット"]
+
+. フローティング IP アドレスへのルートを含むルーティングテーブルを選択します。VPC 内のサブネット用のルーティングテーブルが 1 つ（メインルーティングテーブル）だけの場合は、 Cloud Manager によってそのルーティングテーブルに自動的にフローティング IP アドレスが追加されます。「 * 次へ * 」をクリックして続行します。
++
+image:screenshot_add_fsx_route_table.png["FSX for ONTAP のルートテーブルを選択するスクリーンショット"]
+
+. デフォルトの AWS マスターキーを使用するか、 * キーの変更 * をクリックして別の AWS カスタマーマスターキー（ CMK ）を選択します。CMK の詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/https://docs.netapp.com/us-en/occm/task-setting-up-kms.html["AWS KMS のセットアップ"^]。「 * 次へ * 」をクリックして続行します。
++
+image:screenshot_add_fsx_encryption.png["ONTAP の FSX のデフォルトのマスターキーを設定するスクリーンショット"]
+
+. ストレージを設定します。
++
+.. スループット、容量、単位を選択します。
+.. 必要に応じて、 IOPS 値を指定できます。IOPS の値を指定しない場合、 Cloud Manager は、入力した合計容量の 1GiB あたりの 3 IOPS に基づいてデフォルト値を設定します。たとえば、合計容量に 2 、 000GiB と入力した場合、 IOPS の値が指定されていなければ、有効な IOPS の値は 6 、 000 に設定されます。
++
+
+WARNING: 最小要件を満たしていない IOPS 値を指定すると、作業環境の追加時にエラーが発生します。image:screenshot_fsx_working_environment_failed_iops.png["誤った IOPS 値が設定されている場合のエラーメッセージのスクリーンショット。"]
+
+.. 「 * 次へ * 」をクリックします。image:screenshot_add_fsx_storage_config.png["FSX for ONTAP のストレージ構成の設定のスクリーンショット"]
+
+
+. 構成を確認します。
++
+.. タブをクリックして、 ONTAP のプロパティ、プロバイダのプロパティ、およびネットワーク構成を確認します。
+.. 任意の設定を変更するには、 * 戻る * をクリックします。
+.. [ * 追加（ Add ） ] をクリックして設定を確定し、作業環境を作成します。
++
+image:screenshot_add_fsx_review.png["ONTAP の FSX の設定を確認するスクリーンショット"]
+
+
+
+
+
+ONTAP 用 FSX の設定は、キャンバスページに表示されます。
+
+image:screenshot_add_fsx_cloud.png["作業環境のページに表示される、 ONTAP 用の Amazon FSX のスクリーンショット。"]
+
+Cloud Manager を使用して、 FSX for ONTAP 作業環境にボリュームを追加できるようになりました。
+
+
+
+== 既存の FSX for ONTAP ファイルシステムを検出します
+
+AWS 管理コンソールを使用して ONTAP ファイルシステムの FSX を作成した場合、または以前に削除した作業環境をリストアする場合は、 Cloud Manager を使用して検出できます。
+
+.手順
+. Cloud Manager で、 * 作業環境の追加 * をクリックし、 * Amazon Web Services * を選択します。
+. Amazon FSX for ONTAP * を選択し、 * ここをクリック * します。
++
+image:screenshot_fsx_working_environment_discover.png["Amazon FSX for ONTAP の作業環境を検出するスクリーンショット"]
+
+. 既存のクレデンシャルを選択するか、新しいクレデンシャルを「 * 次へ * 」をクリックします。
+. 追加する AWS リージョンと作業環境を選択します。
++
+image:screenshot_fsx_working_environment_select.png["AWS リージョンと作業環境を選択する際のスクリーンショット"]
+
+. [ 追加（ Add ） ] をクリックします。
+
+
+Cloud Manager に、検出された ONTAP ファイルシステムの FSX が表示されます。
+
+
+
+== ワークスペースから ONTAP の FSX を削除します
+
+ONTAP の FSX は、 ONTAP アカウントまたはボリュームの FSX を削除することなく、 Cloud Manager から削除できます。FSX for ONTAP の作業環境は、いつでも Cloud Manager に追加できます。
+
+.手順
+. 作業環境を開きます。AWS にコネクタがない場合は、プロンプト画面が表示されます。これは無視して作業環境の削除に進んでください。
+. ページの右上にあるアクションメニューを選択し、 * ワークスペースから削除 * をクリックします。
++
+image:screenshot_fsx_working_environment_remove.png["Cloud Manager インターフェイスから ONTAP の FSX を削除するオプションのスクリーンショット。"]
+
+. ONTAP 用の FSX を Cloud Manager から削除するには、 * Remove * をクリックします。
+
+
+
+
+== ONTAP 作業環境の FSX を削除します
+
+ONTAP の FSX は、 Cloud Manager から削除できます。
+
+.作業を開始する前に
+* 実行する必要があります link:task-manage-fsx-volumes.html#delete-volumes["すべてのボリュームを削除します"] ファイルシステムに関連付けられています。
+
+
+
+NOTE: ボリュームを削除または削除するには、 AWS でアクティブなコネクタが必要になります。
+
+* 障害ボリュームが含まれている作業環境は削除できません。ONTAP ファイルシステムの FSX を削除する前に、 AWS 管理コンソールまたは CLI を使用して障害ボリュームを削除する必要があります。
+
+
+
+WARNING: この操作を実行すると、作業環境に関連付けられているすべてのリソースが削除されます。この操作を元に戻すことはできません。
+
+.手順
+. 作業環境を開きます。AWS にコネクタがない場合は、プロンプト画面が表示されます。これは無視して作業環境の削除に進んでください。
+. ページの右上にあるアクションメニューを選択し、 * 削除 * をクリックします。
++
+image:screenshot_fsx_working_environment_delete.png["Cloud Manager インターフェイスからの ONTAP の FSX の削除オプションのスクリーンショット。"]
+
+. 作業環境の名前を入力し、 * 削除 * をクリックします。
+

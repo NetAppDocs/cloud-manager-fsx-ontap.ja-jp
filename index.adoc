@@ -1,0 +1,15 @@
+---
+layout: astra 
+sidebar: sidebar 
+permalink: index.html 
+lead: Amazon FSx for NetApp ONTAP brings the full capabilities of ONTAP to a native AWS managed service delivering a consistent hybrid cloud experience. This documentation describes how to manage FSx for ONTAP by using NetApp Cloud Manager. 
+summary: Amazon FSX for NetApp ONTAP は、 ONTAP の全機能を AWS のネイティブマネージドサービスに提供し、一貫したハイブリッドクラウドエクスペリエンスを実現します。このドキュメントでは、 NetApp Cloud Manager を使用して ONTAP の FSX を管理する方法について説明しています。 
+---
+= Amazon FSX for ONTAP のドキュメント
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

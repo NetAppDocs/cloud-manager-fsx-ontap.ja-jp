@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: start/concept-fsx-aws.html 
+keywords: amazon fsx for ontap, volumes, aws, access key, secret key 
+summary: Amazon FSX for ONTAP はフルマネージドサービスで、お客様は NetApp ONTAP ストレージオペレーティングシステムを搭載したファイルシステムを起動して実行できます。FSX for ONTAP は、ネットアップのお客様が現在オンプレミスで使用しているのと同じ機能、パフォーマンス、管理機能を、ネイティブの AWS サービスの簡易性、即応性、セキュリティ、拡張性で提供します。 
+---
+= Amazon FSX for ONTAP の詳細をご覧ください
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["ONTAP 対応の Amazon FSX"^] は、 NetApp ONTAP ストレージ・オペレーティング・システムを搭載したファイル・システムの起動と実行を可能にするフルマネージド・サービスです。FSX for ONTAP は、ネットアップのお客様がオンプレミスで使用しているのと同じ機能、パフォーマンス、管理機能を、ネイティブの AWS サービスの簡易性、即応性、セキュリティ、拡張性で提供します。
+
+
+
+== の機能
+
+* ストレージ・デバイス ' ソフトウェア ' バックアップを構成または管理する必要はありません
+* CIFS 、 NFSv3 、 NFSv4.x 、 SMB v2.v3.1.1 のプロトコルがサポートされます。
+* 使用頻度の低い IA （ストレージ・ティア）を使用して ' 低コストで事実上無制限のデータ・ストレージ容量を実現します
+* Oracle RAC を含むレイテンシの影響を受けやすいアプリケーションでの実行が保証されています。
+* バンドル価格と従量課金制のいずれかを選択できます
+
+
+
+
+== Cloud Manager のその他の機能
+
+* AWS と Cloud Manager のコネクタを使用すると、ボリュームの作成と管理、データのレプリケート、および Data Sense や Cloud Sync などのクラウドサービス ONTAP との FSX の統合が可能です。
+* 人工知能（ AI ）ベースのテクノロジを使用したクラウドデータセンスは、データコンテキストを理解し、 FSX for ONTAP アカウントに存在する機密データを識別するのに役立ちます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["詳細はこちら。"^]。
+* NetApp Cloud Sync を使用すると、クラウド内やオンプレミス内のあらゆるターゲットへのデータ移行を自動化できます。 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["詳細はこちら。"^]
+
+
+
+
+== コスト
+
+ONTAP 用の FSX アカウントは、 Cloud Manager ではなく AWS で管理されます。 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["『 Amazon FSX for ONTAP Getting Started Guide 』"^]
+
+AWS でコネクタを使用する場合、および Cloud Sync や Data Sense などのオプションのデータサービスを使用する場合は、追加コストが発生します。
+
+
+
+== サポートされている地域
+
+https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["サポート対象の Amazon リージョンを表示します。"^]
+
+
+
+== サポートを受ける
+
+Amazon FSX for ONTAP は、 AWS ファーストパーティの解決策です。AWS FSX ファイルシステム、インフラ、またはこのサービスを使用する AWS 解決策に関連する質問やテクニカルサポートの問題については、 AWS コンソールのサポートセンターを使用して AWS へのサポートケースをオープンしてください。「 FSX for ONTAP 」サービスと該当するカテゴリを選択します。AWS サポートケースの作成に必要な残りの情報を指定します。
+
+Cloud Manager や Cloud Manager のマイクロサービスに関する一般的な質問については、 Cloud Manager のインラインチャットから始めることができます。
+
+内の Cloud Manager またはマイクロサービスに固有のテクニカルサポートの問題については、 Cloud Manager アカウントレベルのシリアル番号を使用してネットアップサポートチケットを開くことができます。サポートを有効にするには、 Cloud Manager のシリアル番号を登録する必要があります。
+
+
+
+== 制限
+
+* Cloud Manager は、オンプレミスまたは Cloud Volumes ONTAP から ONTAP 用 FSX にのみデータをレプリケートできます。
+* この時点で、 ONTAP CLI 、 ONTAP API 、または Cloud Manager API を使用して iSCSI ボリュームを作成できます。
+
