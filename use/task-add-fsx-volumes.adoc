@@ -25,7 +25,7 @@ iSCSI ボリュームは、 ONTAP CLI 、 ONTAP API 、または Cloud Manager A
 
 必要なもの：
 
-* アクティブです https://docs.netapp.com/us-en/cloud-manager-connector/task-creating-connectors-aws.html["AWS のコネクタ"^]。
+* アクティブです https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS のコネクタ"^]。
 * SMB を使用する場合は、 DNS と Active Directory を設定しておく必要があります。DNS と Active Directory のネットワーク設定の詳細については、を参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/self-manage-prereqs.html["AWS ：自己管理型の Microsoft AD を使用するための前提条件"^]。
 
 

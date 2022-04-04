@@ -88,6 +88,6 @@ ONTAP 作業環境で FSX を作成するときに、資格情報を使用でき
 
 == 関連リンク
 
-* https://docs.netapp.com/us-en/cloud-manager-get-started/concept-accounts-aws.html["AWS のクレデンシャルと権限"^]
-* https://docs.netapp.com/us-en/cloud-manager-get-started/task-adding-aws-accounts.html["Cloud Manager 用の AWS クレデンシャルの管理"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-accounts-aws.html["AWS のクレデンシャルと権限"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["Cloud Manager 用の AWS クレデンシャルの管理"^]
 

@@ -21,7 +21,7 @@ FSX for ONTAP は、ほんの数ステップで開始できます。
 ボリュームを追加する前に、 ONTAP 作業環境用の Amazon FSX を作成する必要があります。する必要があります link:requirements/task_setting_up_permissions_fsx.html["Cloud Manager SaaS で役割を引き受けることを可能にする IAM ロールを設定します"]。
 
 [role="quick-margin-para"]
-を用意しておく必要があります https://docs.netapp.com/us-en/cloud-manager-connector/task-creating-connectors-aws.html["AWS 用コネクタ"^] FSX for ONTAP 作業環境を開くには、ボリュームを作成するか、その他の操作を実行します。コネクタが必要な場合、 Cloud Manager はまだ追加されていないかどうかを尋ねます。
+を用意しておく必要があります https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS 用コネクタ"^] FSX for ONTAP 作業環境を開くには、ボリュームを作成するか、その他の操作を実行します。コネクタが必要な場合、 Cloud Manager はまだ追加されていないかどうかを尋ねます。
 
 [role="quick-margin-para"]
 ONTAP ボリュームの FSX は、 Cloud Manager を使用して作成できます。
@@ -30,7 +30,7 @@ ONTAP ボリュームの FSX は、 Cloud Manager を使用して作成できま
 Cloud Manager を使用してボリュームを管理し、レプリケーション、 Cloud Sync 、データセンスなどの追加サービスを設定します。
 
 .関連リンク
-* https://docs.netapp.com/us-en/cloud-manager-get-started/task-creating-connectors-aws.html["Cloud Manager からコネクタを作成します"^]
-* https://docs.netapp.com/us-en/cloud-manager-get-started/task-launching-aws-mktp.html["AWS Marketplace から Connector を起動する"^]
-* https://docs.netapp.com/us-en/cloud-manager-connector/task-installing-linux.html["Linux ホストへの Connector ソフトウェアのインストール"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Cloud Manager からコネクタを作成します"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-aws-mktp.html["AWS Marketplace から Connector を起動する"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Linux ホストへの Connector ソフトウェアのインストール"^]
 

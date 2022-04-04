@@ -47,7 +47,6 @@
   <block id="3c5b27df21b3db8fbf99260b6111c620" category="paragraph">iSCSI ボリュームは、 ONTAP CLI 、 ONTAP API 、または Cloud Manager API を使用して作成し、 FSX for ONTAP 作業環境で Cloud Manager を使用して管理できます。</block>
   <block id="36ee27bc3fc7c617977b35534609c979" category="paragraph">必要なもの：</block>
   <block id="ad7e5366eeeef80a0cca58ed2f228e69" category="inline-link">AWS のコネクタ</block>
-  <block id="9715c6c76185fc55127d177e360e9385" category="list-text">アクティブです<block ref="619cc03f7b60a7ffb6c9bc0f703dc5ac" category="inline-link-rx"></block>。</block>
   <block id="5465e73e9a93dbf3732ca4677b294afe" category="inline-link-macro">AWS ：自己管理型の Microsoft AD を使用するための前提条件</block>
   <block id="9e9d8417e8c186ec6d679c589ea0e388" category="list-text">SMB を使用する場合は、 DNS と Active Directory を設定しておく必要があります。DNS と Active Directory のネットワーク設定の詳細については、を参照してください <block ref="d929f7299259db2194621c6c3cd97ea7" category="inline-link-macro-rx"></block>。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
@@ -433,9 +432,7 @@
   <block id="c0abab76d53e87b10c7a7de184fc0f53" category="paragraph">ONTAP 作業環境で FSX を作成するときに、資格情報を使用できるようになりました。</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="section-title">関連リンク</block>
   <block id="97911b3c54a4e826b34c1f79026316c5" category="inline-link">AWS のクレデンシャルと権限</block>
-  <block id="8338e29a734b66a3349e1aa3c284aaa2" category="list-text"><block ref="8338e29a734b66a3349e1aa3c284aaa2" category="inline-link-rx"></block></block>
   <block id="6bccb09f2c81a00c03cd35c87a54b03f" category="inline-link">Cloud Manager 用の AWS クレデンシャルの管理</block>
-  <block id="649c686446ef2e48153e42e8ebf75513" category="list-text"><block ref="649c686446ef2e48153e42e8ebf75513" category="inline-link-rx"></block></block>
   <block id="603ec1431df96260c06b8b0fc539dca4" category="summary">Amazon FSX for ONTAP はフルマネージドサービスで、お客様は NetApp ONTAP ストレージオペレーティングシステムを搭載したファイルシステムを起動して実行できます。FSX for ONTAP は、ネットアップのお客様が現在オンプレミスで使用しているのと同じ機能、パフォーマンス、管理機能を、ネイティブの AWS サービスの簡易性、即応性、セキュリティ、拡張性で提供します。</block>
   <block id="2373ee05a5847e8f92338b8835c8a17b" category="paragraph"><block ref="96821e1e659978c978732a5dc24298ac" category="inline-link-macro-rx"></block> は、 NetApp ONTAP ストレージ・オペレーティング・システムを搭載したファイル・システムの起動と実行を可能にするフルマネージド・サービスです。FSX for ONTAP は、ネットアップのお客様がオンプレミスで使用しているのと同じ機能、パフォーマンス、管理機能を、ネイティブの AWS サービスの簡易性、即応性、セキュリティ、拡張性で提供します。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">の機能</block>
@@ -468,15 +465,11 @@
   <block id="2db8ac87c99d0b6932322889e2e22b9e" category="inline-link-macro">Cloud Manager SaaS で役割を引き受けることを可能にする IAM ロールを設定します</block>
   <block id="43ff28b4c7690071a9a464f1a45a0fdb" category="paragraph">ボリュームを追加する前に、 ONTAP 作業環境用の Amazon FSX を作成する必要があります。する必要があります <block ref="a7824a05bb8c139e3298b282499ce62d" category="inline-link-macro-rx"></block>。</block>
   <block id="fdf5c0db5e25841d90a9737c63c9172a" category="inline-link">AWS 用コネクタ</block>
-  <block id="dc54255a75613f079e6fe6e679736fe9" category="paragraph">を用意しておく必要があります<block ref="00f46849b460b453cd7193e5c9634911" category="inline-link-rx"></block> FSX for ONTAP 作業環境を開くには、ボリュームを作成するか、その他の操作を実行します。コネクタが必要な場合、 Cloud Manager はまだ追加されていないかどうかを尋ねます。</block>
   <block id="173cc3f2694be1fa38808fdd8021304c" category="paragraph">ONTAP ボリュームの FSX は、 Cloud Manager を使用して作成できます。</block>
   <block id="711497cf466e121cf263849d7f648140" category="paragraph">Cloud Manager を使用してボリュームを管理し、レプリケーション、 Cloud Sync 、データセンスなどの追加サービスを設定します。</block>
   <block id="4d36bd7ea566aabab173cf25b707699a" category="inline-link">Cloud Manager からコネクタを作成します</block>
-  <block id="0d07b06047060aa469c2c6bab8b71067" category="list-text"><block ref="0d07b06047060aa469c2c6bab8b71067" category="inline-link-rx"></block></block>
   <block id="de737ba84e61f1a8380fd351112b7183" category="inline-link">AWS Marketplace から Connector を起動する</block>
-  <block id="beb177ff820d3d8e2be6739354257cc5" category="list-text"><block ref="beb177ff820d3d8e2be6739354257cc5" category="inline-link-rx"></block></block>
   <block id="c8f9fcb2d5c182f76e53507a00efe037" category="inline-link">Linux ホストへの Connector ソフトウェアのインストール</block>
-  <block id="01bad35237928471ef7e7388b89cebcf" category="list-text"><block ref="01bad35237928471ef7e7388b89cebcf" category="inline-link-rx"></block></block>
   <block id="80ff3e3b4817bcd801ad60d27676fed7" category="summary">Amazon FSX for NetApp ONTAP は、 ONTAP の全機能を AWS のネイティブマネージドサービスに提供し、一貫したハイブリッドクラウドエクスペリエンスを実現します。このドキュメントでは、 NetApp Cloud Manager を使用して ONTAP の FSX を管理する方法について説明しています。</block>
   <block id="e7d8c0779e86c7c2edb0791a45906d17" category="doc">Amazon FSX for ONTAP のドキュメント</block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">Cloud Manager のすべてのドキュメント</block>
@@ -497,4 +490,11 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central のブログです</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
+  <block id="2aeb3bf14f4c88c233b9054f0d5f9f46" category="list-text">アクティブです<block ref="f8ec938ce1f3506a828c9f7802c63902" category="inline-link-rx"></block>。</block>
+  <block id="3d3e910b68a6f9dc68d007376e0dae47" category="list-text"><block ref="3d3e910b68a6f9dc68d007376e0dae47" category="inline-link-rx"></block></block>
+  <block id="0f9f43c114be6c5746b95fa092ad10b2" category="list-text"><block ref="0f9f43c114be6c5746b95fa092ad10b2" category="inline-link-rx"></block></block>
+  <block id="885bf112deac8aef76c696fd4369622f" category="paragraph">を用意しておく必要があります<block ref="ee4793145cbadfb90a826d44d7b7a098" category="inline-link-rx"></block> FSX for ONTAP 作業環境を開くには、ボリュームを作成するか、その他の操作を実行します。コネクタが必要な場合、 Cloud Manager はまだ追加されていないかどうかを尋ねます。</block>
+  <block id="300de2fff5e8bf53f93ce557eb141f27" category="list-text"><block ref="300de2fff5e8bf53f93ce557eb141f27" category="inline-link-rx"></block></block>
+  <block id="f184c656bf02dee61743212967601db4" category="list-text"><block ref="f184c656bf02dee61743212967601db4" category="inline-link-rx"></block></block>
+  <block id="86a342f075ca5d85dc5033d1092f71cd" category="list-text"><block ref="86a342f075ca5d85dc5033d1092f71cd" category="inline-link-rx"></block></block>
 </blocks>
