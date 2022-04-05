@@ -25,7 +25,7 @@ Amazon FSX for ONTAP の新機能をご確認ください。
 
 ONTAP 作業環境向け FSX を作成する場合、 Cloud Manager が ONTAP 作業環境用の FSX を作成すると想定できる IAM ロールの ARN を指定する必要があります。以前は、 AWS アクセスキーを指定する必要がありました。
 
-link:/task/task-setting-up-permissions-fsx.html["FSX for ONTAP のアクセス許可を設定する方法について説明します"]。
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["FSX for ONTAP のアクセス許可を設定する方法について説明します"]。
 
 
 
@@ -41,7 +41,7 @@ Cloud Manager API を使用して FSX for ONTAP 用の iSCSI ボリュームを�
 
 === ボリュームの作成時にボリュームの単位を選択します
 
-可能です link:/task/task-add-fsx-volumes.html#creating-volumes["ボリュームの作成時にボリュームの単位（ GiB または TiB ）を選択します"] FSX for ONTAP の場合。
+可能です link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["ボリュームの作成時にボリュームの単位（ GiB または TiB ）を選択します"] FSX for ONTAP の場合。
 
 
 
@@ -51,13 +51,13 @@ Cloud Manager API を使用して FSX for ONTAP 用の iSCSI ボリュームを�
 
 === Cloud Manager を使用して CIFS ボリュームを作成
 
-できるようになりました。 link:/task/task-add-fsx-volumes.html#creating-volumes["Cloud Manager を使用して、 FSX for ONTAP に CIFS ボリュームを作成します"]。
+できるようになりました。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["Cloud Manager を使用して、 FSX for ONTAP に CIFS ボリュームを作成します"]。
 
 
 
 === Cloud Manager を使用してボリュームを編集
 
-できるようになりました。 link:/task/task-manage-fsx-volumes.html#editing-volumes["Cloud Manager を使用して ONTAP ボリュームの FSX を編集します"]。
+できるようになりました。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#editing-volumes["Cloud Manager を使用して ONTAP ボリュームの FSX を編集します"]。
 
 
 
@@ -69,14 +69,14 @@ Cloud Manager API を使用して FSX for ONTAP 用の iSCSI ボリュームを�
 
 * link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["ONTAP 対応の Amazon FSX"] は、 NetApp ONTAP ストレージ・オペレーティング・システムを搭載したファイル・システムの起動と実行を可能にするフルマネージド・サービスです。FSX for ONTAP は、ネットアップのお客様がオンプレミスで使用しているのと同じ機能、パフォーマンス、管理機能を、ネイティブの AWS サービスの簡易性、即応性、セキュリティ、拡張性で提供します。
 +
-link:concept-fsx-aws.html["Amazon FSX for ONTAP の詳細をご覧ください"]。
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["Amazon FSX for ONTAP の詳細をご覧ください"]。
 
 * ONTAP 作業環境用に Cloud Manager で FSX を設定できます。
 +
-link:/task/task-creating-fsx-working-environment.html["ONTAP 作業環境用の Amazon FSX を作成します"]。
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["ONTAP 作業環境用の Amazon FSX を作成します"]。
 
 * AWS と Cloud Manager のコネクタを使用すると、ボリュームの作成と管理、データのレプリケート、および Data Sense や Cloud Sync などのクラウドサービス ONTAP との FSX の統合が可能です。
 +
-link:task-scanning-fsx.html#quick-start["Amazon FSX for ONTAP のクラウドデータセンスを今すぐ始めましょう"]。
+link:https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-fsx.html["Amazon FSX for ONTAP のクラウドデータセンスを今すぐ始めましょう"^]。
 
 

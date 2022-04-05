@@ -13,32 +13,25 @@
   <block id="3152521594c71809f9c72383294b05b7" category="section-title">IAM の役割を引き受けます</block>
   <block id="1bae6acf64b673783a7e55db59c7f74e" category="paragraph">ONTAP 作業環境向け FSX を作成する場合、 Cloud Manager が ONTAP 作業環境用の FSX を作成すると想定できる IAM ロールの ARN を指定する必要があります。以前は、 AWS アクセスキーを指定する必要がありました。</block>
   <block id="f63d604edef29843d35ad367e0d82814" category="inline-link-macro">FSX for ONTAP のアクセス許可を設定する方法について説明します</block>
-  <block id="13e5c10c795e686e29eadb40176673c7" category="paragraph"><block ref="cf631a156cd347f4c5596cb7048bba9e" category="inline-link-macro-rx"></block>。</block>
   <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">2021 年 10 月 31 日</block>
   <block id="5b80dcfe3dbe5a2279a764bb895220e8" category="section-title">Cloud Manager API を使用して iSCSI ボリュームを作成</block>
   <block id="c9901681b19037cfe4d776eb572a7a6b" category="paragraph">Cloud Manager API を使用して FSX for ONTAP 用の iSCSI ボリュームを作成し、作業環境で管理できます。</block>
   <block id="1b06c7a9314e682b34302ac90d6d6650" category="section-title">ボリュームの作成時にボリュームの単位を選択します</block>
   <block id="155385bf6757f064143eb321fbfd3bff" category="inline-link-macro">ボリュームの作成時にボリュームの単位（ GiB または TiB ）を選択します</block>
-  <block id="da22f48d59f2fa57df49bc6c518d4ea3" category="paragraph">可能です <block ref="efd00606ea840f5daa498a5838165877" category="inline-link-macro-rx"></block> FSX for ONTAP の場合。</block>
   <block id="d1c47d8bf748c203ff983262e6c108cb" category="section-title">2021 年 10 月 4 日</block>
   <block id="2ac9dc8f932fa4bebfc31724e388e13a" category="section-title">Cloud Manager を使用して CIFS ボリュームを作成</block>
   <block id="901f92bd8486511c3943b59dd9b9f6a4" category="inline-link-macro">Cloud Manager を使用して、 FSX for ONTAP に CIFS ボリュームを作成します</block>
-  <block id="dd2965fdd58c782fcb7aa8377a7b2d12" category="paragraph">できるようになりました。 <block ref="a32b1ce0bbebafb6ae37c1c71466c875" category="inline-link-macro-rx"></block>。</block>
   <block id="1664cbd7cbe0abbcd6d133e652cd42c1" category="section-title">Cloud Manager を使用してボリュームを編集</block>
   <block id="7a6930a21ad40feae487321aef61a969" category="inline-link-macro">Cloud Manager を使用して ONTAP ボリュームの FSX を編集します</block>
-  <block id="bcdfd7c9df2a00f5b0ec2f5821dbf7b0" category="paragraph">できるようになりました。 <block ref="899a64d6d124f6c482bcc934f2596bd7" category="inline-link-macro-rx"></block>。</block>
   <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021 年 9 月 2 日</block>
   <block id="6c88f9e17d9019e00177d64f9db55d2e" category="section-title">Amazon FSX for ONTAP のサポート</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP 対応の Amazon FSX</block>
   <block id="a0e08ea7f36fd675a07b353350648fbe" category="list-text"><block ref="040983c31c5d3aff2795da28b0ee5564" category="inline-link-macro-rx"></block> は、 NetApp ONTAP ストレージ・オペレーティング・システムを搭載したファイル・システムの起動と実行を可能にするフルマネージド・サービスです。FSX for ONTAP は、ネットアップのお客様がオンプレミスで使用しているのと同じ機能、パフォーマンス、管理機能を、ネイティブの AWS サービスの簡易性、即応性、セキュリティ、拡張性で提供します。</block>
   <block id="43ece0944414298a29b4d72bc56373f1" category="inline-link-macro">Amazon FSX for ONTAP の詳細をご覧ください</block>
-  <block id="3ad7a391899f410f6c691f04c5fc29dc" category="paragraph"><block ref="28ccfcf4ae259f2c2c90423cda2e679d" category="inline-link-macro-rx"></block>。</block>
   <block id="9d2704a937df8ec429bf2446953b2687" category="list-text">ONTAP 作業環境用に Cloud Manager で FSX を設定できます。</block>
   <block id="64c9a9d3cd7c3ca76cf19b78a96c9b79" category="inline-link-macro">ONTAP 作業環境用の Amazon FSX を作成します</block>
-  <block id="9f5231696fe1247c1c174f8df3236567" category="paragraph"><block ref="4296fbdd4f0f53e33c6e1d55bda55b15" category="inline-link-macro-rx"></block>。</block>
   <block id="7965f44d9657c905774d8d427141b845" category="list-text">AWS と Cloud Manager のコネクタを使用すると、ボリュームの作成と管理、データのレプリケート、および Data Sense や Cloud Sync などのクラウドサービス ONTAP との FSX の統合が可能です。</block>
   <block id="eddf71c2364cb70dc54a32723a344817" category="inline-link-macro">Amazon FSX for ONTAP のクラウドデータセンスを今すぐ始めましょう</block>
-  <block id="deb4ff1d98dec32cf90245eadfe9d5fb" category="paragraph"><block ref="f040423cd4b5eeaa8e9ebfeeb9fc3ca2" category="inline-link-macro-rx"></block>。</block>
   <block id="f72448d4491d54800c0487b0482fd149" category="summary">作業環境のセットアップ後、 ONTAP ボリューム、クローン、スナップショット、階層化ポリシーの変更、 ONTAP の FSX の削除や削除を行うことができます。</block>
   <block id="0b0c82859f18c5cf1bcb10330fab56bd" category="doc">ONTAP 用の Amazon FSX ボリュームを作成します</block>
   <block id="d950ccfec30779e51b9fd6a8aecbb558" category="paragraph">作業環境をセットアップしたら、 ONTAP ボリュームの FSX を作成してマウントできます。</block>
@@ -119,7 +112,6 @@
   <block id="e5375c42110b0016231f311272774e83" category="paragraph">最初のステップは、 ONTAP 作業環境用の FSX を作成することです。AWS 管理コンソールですでに ONTAP ファイルシステム用の FSX を作成している場合は、次の操作を実行できます <block ref="6a48f5b54424256e49232bb9af7a3d2f" category="inline-link-macro-rx"></block>。</block>
   <block id="faa4b07ffa49aaead3b9217354fd2e07" category="paragraph">Cloud Manager で FSX for ONTAP の作業環境を作成する前に、次のものが必要です。</block>
   <block id="110ca3ef191558286fc6a6b28dc94cb5" category="inline-link-macro">Cloud Manager に AWS クレデンシャルを追加しています</block>
-  <block id="ecfc08dcf2bb62e3bae7466635378054" category="list-text">Cloud Manager に ONTAP 作業環境用の FSX の作成に必要な権限を付与する IAM ロールの ARN 。を参照してください <block ref="deefb8e7d14a7b8dbc248ff023724010" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="122aefb3c8684a0e38fb50d87247ad18" category="list-text">ONTAP インスタンスの FSX を作成する場所のリージョンおよび VPN 情報。</block>
   <block id="86e4fb4adcc1e79cfd5f41b2e24492a4" category="list-text">Cloud Manager で、新しい作業環境を追加し、場所 * Amazon Web Services * を選択して、 * Next * をクリックします。</block>
   <block id="b270ee1d45588367ac774fa0f727fc7b" category="list-text">Amazon FSX for ONTAP * を選択し、 * Next * をクリックします。</block>
@@ -129,7 +121,6 @@
   <block id="ecda29eb0e0827e3bc560f177dcde537" category="list-text">ご使用のアカウントに、 FSX for ONTAP に対する適切な AWS 権限を持つ既存の IAM ロールがある場合は、ドロップダウンからそのロールを選択します。</block>
   <block id="bc7877d082a71bb780b2cfe54a2f56db" category="inline-image-macro">AWS のロールのドロップダウンを示すスクリーンショット</block>
   <block id="88c29361a495a558e8e94ba0f1787827" category="paragraph"><block ref="88c29361a495a558e8e94ba0f1787827" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="430a5d13b9507e02103822accb0efa18" category="list-text">アカウントに IAM ロールがない場合は、 * クレデンシャルページ * をクリックし、ウィザードの手順に従って、 ONTAP クレデンシャル用の FSX を使用して AWS IAM ロールの ARN を追加します。を参照してください <block ref="deefb8e7d14a7b8dbc248ff023724010" category="inline-link-macro-rx"></block> を参照してください。</block>
   <block id="49727167f9c15ab5bfa0422395e72a31" category="inline-image-macro">ONTAP 権限用に FSX を使用して AWS IAM ロールの ARN を追加する手順のスクリーンショット。</block>
   <block id="32e8c427ff9ed76c4f8f6c5425c12c82" category="paragraph"><block ref="32e8c427ff9ed76c4f8f6c5425c12c82" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2d2a9afadbb6d43ee9c21ef6dc9d315f" category="list-text">ONTAP インスタンスの FSX に関する情報を入力します。</block>
@@ -231,9 +222,7 @@
   <block id="baef40813f00b62c8e9dcc643a76c881" category="list-text">新しいボリューム階層化ポリシーを選択し、 * Change * をクリックします。</block>
   <block id="016049d3662ab4f0c21871ed98f2bb37" category="section-title">データをレプリケートして同期</block>
   <block id="abca63d751ec4cebd209af264e376ee4" category="inline-link">システム間でのデータのレプリケーション</block>
-  <block id="f337ff43d209c323b3938f63f85a1802" category="paragraph">Cloud Manager を使用して、ストレージ環境間でデータをレプリケートできます。ONTAP レプリケーション用に FSX を構成するには、を参照してください<block ref="9a75c99f0497136ee916f228db55cacf" category="inline-link-rx"></block>。</block>
   <block id="35931d34af92c203401fd4bb760eb1cf" category="inline-link">同期関係を作成する</block>
-  <block id="755dfb4d90f88c5d06ef7f23988ca971" category="paragraph">Cloud Manager の Cloud Sync を使用して、同期関係を作成できます。同期関係を設定するには、を参照してください<block ref="f3020d1803625b27d288e870f5abc00a" category="inline-link-rx"></block>。</block>
   <block id="f91674f3b22216fc484532cd24dda908" category="section-title">ボリュームを削除します</block>
   <block id="9497c556620605c0441cf034ff68a527" category="paragraph">不要になったボリュームを削除します。</block>
   <block id="08d16a95ed82f881bcc5359ecb0c8769" category="paragraph">以前に SnapMirror 関係に含まれていたボリュームは、 Cloud Manager を使用して削除することはできません。SnapMirror ボリュームは、 AWS 管理コンソールまたは CLI を使用して削除する必要があります。</block>
@@ -463,7 +452,6 @@
   <block id="bf7ec532103402eaed4653738655f6ad" category="doc">Amazon FSX for ONTAP の利用を開始しましょう</block>
   <block id="fbda414afc779c9e1e46c45b74091adb" category="paragraph">FSX for ONTAP は、ほんの数ステップで開始できます。</block>
   <block id="2db8ac87c99d0b6932322889e2e22b9e" category="inline-link-macro">Cloud Manager SaaS で役割を引き受けることを可能にする IAM ロールを設定します</block>
-  <block id="43ff28b4c7690071a9a464f1a45a0fdb" category="paragraph">ボリュームを追加する前に、 ONTAP 作業環境用の Amazon FSX を作成する必要があります。する必要があります <block ref="a7824a05bb8c139e3298b282499ce62d" category="inline-link-macro-rx"></block>。</block>
   <block id="fdf5c0db5e25841d90a9737c63c9172a" category="inline-link">AWS 用コネクタ</block>
   <block id="173cc3f2694be1fa38808fdd8021304c" category="paragraph">ONTAP ボリュームの FSX は、 Cloud Manager を使用して作成できます。</block>
   <block id="711497cf466e121cf263849d7f648140" category="paragraph">Cloud Manager を使用してボリュームを管理し、レプリケーション、 Cloud Sync 、データセンスなどの追加サービスを設定します。</block>
@@ -497,4 +485,16 @@
   <block id="300de2fff5e8bf53f93ce557eb141f27" category="list-text"><block ref="300de2fff5e8bf53f93ce557eb141f27" category="inline-link-rx"></block></block>
   <block id="f184c656bf02dee61743212967601db4" category="list-text"><block ref="f184c656bf02dee61743212967601db4" category="inline-link-rx"></block></block>
   <block id="86a342f075ca5d85dc5033d1092f71cd" category="list-text"><block ref="86a342f075ca5d85dc5033d1092f71cd" category="inline-link-rx"></block></block>
+  <block id="85f610955384d6c0dcae09552c4508e0" category="paragraph"><block ref="121317bac1802e026b9ea68cbe410489" category="inline-link-macro-rx"></block>。</block>
+  <block id="bdc6d93b4370ea76238df491d9d141c4" category="paragraph">可能です <block ref="88fc27d29fd6019ad989d255373b75d1" category="inline-link-macro-rx"></block> FSX for ONTAP の場合。</block>
+  <block id="8cb898147f5ef32e49709138a0ee48c6" category="paragraph">できるようになりました。 <block ref="98c695f1949c26a2dd10f3c98347e43b" category="inline-link-macro-rx"></block>。</block>
+  <block id="b233fccd6a0e80b0628c8b760f808f80" category="paragraph">できるようになりました。 <block ref="4f9c429b7c1519954500e41db7985c1c" category="inline-link-macro-rx"></block>。</block>
+  <block id="b84e3c9bb4ac9216f14349e3b5be8ec3" category="paragraph"><block ref="173ddc048bd16ccfb71d77420d7581cb" category="inline-link-macro-rx"></block>。</block>
+  <block id="b7dd73bfb5bbb0ec2884525999924384" category="paragraph"><block ref="e85a369c316ea87dc3d5da27638bd157" category="inline-link-macro-rx"></block>。</block>
+  <block id="d35e6fa404873b4a616b1313e98cf3d9" category="paragraph"><block ref="6e3374d20d69610b03c5ed3fa5af9a08" category="inline-link-macro-rx"></block>。</block>
+  <block id="69bfbe4affa79598268226d5fa65599d" category="list-text">Cloud Manager に ONTAP 作業環境用の FSX の作成に必要な権限を付与する IAM ロールの ARN 。を参照してください <block ref="e74b530483dfdc11dbf81674fda787f8" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="20b3b63ea7f8892dc0d3f3b25bea6c49" category="list-text">アカウントに IAM ロールがない場合は、 * クレデンシャルページ * をクリックし、ウィザードの手順に従って、 ONTAP クレデンシャル用の FSX を使用して AWS IAM ロールの ARN を追加します。を参照してください <block ref="e74b530483dfdc11dbf81674fda787f8" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="b2e8050cf49252f7b06bd379448c5e15" category="paragraph">Cloud Manager を使用して、ストレージ環境間でデータをレプリケートできます。ONTAP レプリケーション用に FSX を構成するには、を参照してください<block ref="063d7001b249d0164d3c6e7cd82a78db" category="inline-link-rx"></block>。</block>
+  <block id="12fc3818f5e3f781c2bf4eb8b8d50ffc" category="paragraph">Cloud Manager の Cloud Sync を使用して、同期関係を作成できます。同期関係を設定するには、を参照してください<block ref="3bb02b9d4fba268ff940f67f5abfe3eb" category="inline-link-rx"></block>。</block>
+  <block id="9d662ce44c324aa67c253be893864c71" category="paragraph">ボリュームを追加する前に、 ONTAP 作業環境用の Amazon FSX を作成する必要があります。する必要があります <block ref="afb5d18769390df2b32a585a478c27d2" category="inline-link-macro-rx"></block>。</block>
 </blocks>

@@ -23,7 +23,7 @@ Cloud Manager を使用すると、ボリュームや追加のデータサービ
 
 Cloud Manager で FSX for ONTAP の作業環境を作成する前に、次のものが必要です。
 
-* Cloud Manager に ONTAP 作業環境用の FSX の作成に必要な権限を付与する IAM ロールの ARN 。を参照してください link:task-setting-up-permissions-fsx.html["Cloud Manager に AWS クレデンシャルを追加しています"] を参照してください。
+* Cloud Manager に ONTAP 作業環境用の FSX の作成に必要な権限を付与する IAM ロールの ARN 。を参照してください link:../requirements/task-setting-up-permissions-fsx.html["Cloud Manager に AWS クレデンシャルを追加しています"] を参照してください。
 * ONTAP インスタンスの FSX を作成する場所のリージョンおよび VPN 情報。
 
 
@@ -39,7 +39,7 @@ image:screenshot_add_fsx_working_env.png["Amazon FSX for ONTAP の作業環境�
 +
 image:screenshot-fsx-assume-role-present.png["AWS のロールのドロップダウンを示すスクリーンショット"]
 
-.. アカウントに IAM ロールがない場合は、 * クレデンシャルページ * をクリックし、ウィザードの手順に従って、 ONTAP クレデンシャル用の FSX を使用して AWS IAM ロールの ARN を追加します。を参照してください link:task-setting-up-permissions-fsx.html["Cloud Manager に AWS クレデンシャルを追加しています"] を参照してください。
+.. アカウントに IAM ロールがない場合は、 * クレデンシャルページ * をクリックし、ウィザードの手順に従って、 ONTAP クレデンシャル用の FSX を使用して AWS IAM ロールの ARN を追加します。を参照してください link:../requirements/task-setting-up-permissions-fsx.html["Cloud Manager に AWS クレデンシャルを追加しています"] を参照してください。
 +
 image:screenshot-fsx-assume-role-not-present.png["ONTAP 権限用に FSX を使用して AWS IAM ロールの ARN を追加する手順のスクリーンショット。"]
 

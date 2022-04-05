@@ -78,9 +78,9 @@ Snapshot コピーは、ボリュームのポイントインタイムコピー�
 
 == データをレプリケートして同期
 
-Cloud Manager を使用して、ストレージ環境間でデータをレプリケートできます。ONTAP レプリケーション用に FSX を構成するには、を参照してください https://docs.netapp.com/us-en/cloud-manager-replication/https://docs.netapp.com/us-en/occm/task-replicating-data.html["システム間でのデータのレプリケーション"^]。
+Cloud Manager を使用して、ストレージ環境間でデータをレプリケートできます。ONTAP レプリケーション用に FSX を構成するには、を参照してください https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["システム間でのデータのレプリケーション"^]。
 
-Cloud Manager の Cloud Sync を使用して、同期関係を作成できます。同期関係を設定するには、を参照してください https://docs.netapp.com/us-en/cloud-manager-sync/https://docs.netapp.com/us-en/occm/task-sync-quick-start.html["同期関係を作成する"^]。
+Cloud Manager の Cloud Sync を使用して、同期関係を作成できます。同期関係を設定するには、を参照してください https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html["同期関係を作成する"^]。
 
 
 
