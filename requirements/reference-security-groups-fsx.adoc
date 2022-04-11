@@ -6,6 +6,7 @@ summary: Cloud Manager で作成される AWS セキュリティグループに�
 ---
 = ONTAP の FSX のセキュリティグループルール
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Cloud Manager では、 ONTAP 作業環境用の FSX を作成して、
 ---
 = Amazon FSX for ONTAP 作業環境の作成と管理
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

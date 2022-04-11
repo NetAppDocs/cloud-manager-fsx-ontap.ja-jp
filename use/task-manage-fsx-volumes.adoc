@@ -6,6 +6,7 @@ summary: Cloud Manager を使用して、 ONTAP のボリューム、クロー�
 ---
 = Amazon FSX for ONTAP のボリュームを管理します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

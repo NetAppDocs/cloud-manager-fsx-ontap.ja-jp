@@ -7,6 +7,7 @@ summary: Amazon FSX for NetApp ONTAP は、 ONTAP の全機能を AWS のネイ�
 ---
 = Amazon FSX for ONTAP のドキュメント
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

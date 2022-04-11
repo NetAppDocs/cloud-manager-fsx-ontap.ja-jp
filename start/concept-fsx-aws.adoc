@@ -6,6 +6,7 @@ summary: Amazon FSX for ONTAP はフルマネージドサービスで、お客�
 ---
 = Amazon FSX for ONTAP の詳細をご覧ください
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

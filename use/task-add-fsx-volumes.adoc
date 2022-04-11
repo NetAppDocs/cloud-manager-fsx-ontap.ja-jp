@@ -6,6 +6,7 @@ summary: 作業環境のセットアップ後、 ONTAP ボリューム、クロ�
 ---
 = ONTAP 用の Amazon FSX ボリュームを作成します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

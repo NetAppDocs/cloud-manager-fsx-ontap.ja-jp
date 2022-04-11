@@ -6,6 +6,7 @@ summary: Amazon FSX for ONTAP の作業環境を作成または管理するに�
 ---
 = ONTAP の FSX のアクセス許可を設定します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
