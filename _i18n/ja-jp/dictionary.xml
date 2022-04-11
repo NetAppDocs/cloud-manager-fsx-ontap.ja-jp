@@ -245,9 +245,7 @@
   <block id="e55bdaae79868c01c7cc36c1283eb425" category="summary">Cloud Manager で作成される AWS セキュリティグループには、 Cloud Manager と FSX for ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールが含まれています。テスト目的または独自のポートを使用する必要がある場合には、ポートを参照してください。</block>
   <block id="e87d6ed459b274ad7c388e0797013c9f" category="doc">ONTAP の FSX のセキュリティグループルール</block>
   <block id="9f415057e43c73d4e37a0068a0ca9486" category="section-title">ONTAP の FSX のルール</block>
-  <block id="8506857e27e6280388aa5873bf48c993" category="paragraph">FSX for ONTAP のセキュリティグループには、インバウンドとアウトバウンドの両方のルールが必要です。</block>
   <block id="1b3884b38c271fe13c8142e1355e4523" category="section-title">インバウンドルール</block>
-  <block id="4a0ed8041426b30c39ae888d3e61bd7e" category="paragraph">定義済みセキュリティグループのインバウンドルールの送信元は 0.0.0.0/0 です。</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">プロトコル</block>
   <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">ポート</block>
   <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
@@ -301,7 +299,6 @@
   <block id="170100eb6e4338b75a2fc06f87f9e5a4" category="cell">すべての TCP</block>
   <block id="d78c51305ff97e9da7f4c5cb3d1d3453" category="cell">すべての UDP</block>
   <block id="e2f58f5baabc821fa8bdc13a96184016" category="section-title">高度なアウトバウンドルール</block>
-  <block id="a006e2d570ede726381201e11de10d68" category="paragraph">発信トラフィックに固定ルールが必要な場合は、次の情報を使用して、 FSX for ONTAP による発信通信に必要なポートのみを開くことができます。</block>
   <block id="d0fb2d0bd8bf6909549b5e1a987f783c" category="admonition">ソースは、 ONTAP システムの FSX 上のインターフェイス（ IP アドレス）です。</block>
   <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">サービス</block>
   <block id="f31bbdd1b3e85bccd652680e16935819" category="cell">ソース</block>
@@ -331,17 +328,6 @@
   <block id="54f7d853bcd07992f133218c21a038be" category="cell">クラスタ間 LIF</block>
   <block id="55de3994e99aa970c849c53bc4429da9" category="cell">バックアップエンドポイントまたはリストアエンドポイント</block>
   <block id="4c62d4e66380262ec50ccc7b5d1acc02" category="cell">S3 へのバックアップ処理とリストア処理 フィーチャー（ Feature ）</block>
-  <block id="249694a485fc5d3289c38986b4f8e887" category="cell">クラスタ</block>
-  <block id="c24475390eff056757a0e12aa5fe5e9f" category="cell">すべてのトラフィック</block>
-  <block id="65ec67271f1ca7c8d6b82e17125410b7" category="cell">1 つのノード上のすべての LIF</block>
-  <block id="c0900faa4af93e0723408cba2ec46323" category="cell">もう一方のノードのすべての LIF</block>
-  <block id="f484b5d85f303e1a759f409a83b3a0e8" category="cell">クラスタ間通信（ Cloud Volumes ONTAP HA のみ）</block>
-  <block id="e93028bdc1aacdfb3687181f2031765d" category="cell">3000</block>
-  <block id="7b949d0cea1dcd058fa15d15e56dcb55" category="cell">HA メディエータ</block>
-  <block id="a027048d5e4131f9799063f22513c813" category="cell">ZAPI コール（ Cloud Volumes ONTAP HA のみ）</block>
-  <block id="7d6fe0dd606232f7155fdeae2ea620a9" category="cell">ICMP</block>
-  <block id="c4ca4238a0b923820dcc509a6f75849b" category="cell">1.</block>
-  <block id="4cfc36b50d04aaf1a0c91d6e93be6dca" category="cell">キープアライブ（ Cloud Volumes ONTAP HA のみ）</block>
   <block id="54201c55d2bdc7a9e19d9e032d8c0ede" category="cell">DHCP</block>
   <block id="a3f390d88e4c41f2747bfa2f1b5f87db" category="cell">68</block>
   <block id="74d297edd733ae756164d870a3d2f03f" category="cell">初回セットアップ用の DHCP クライアント</block>
@@ -387,8 +373,6 @@
   <block id="096a28c32a85d3d48462b468a3700d9a" category="cell">アウトバウンドインターネットおよび ONTAP クラスタ管理 LIF</block>
   <block id="756da060e5d58870fc2d28d4b7bc9a45" category="cell">AWS および ONTAP への API コール、およびネットアップへの AutoSupport メッセージの送信</block>
   <block id="22043367a89ddcf3eb99eec509a967ba" category="cell">API コール</block>
-  <block id="e9ed822bdea417e9dfd79a2c81634ba4" category="cell">ONTAP HA メディエーター</block>
-  <block id="ad4167f20adb487bdfdd71a56ab00120" category="cell">ONTAP HA メディエーターとの通信</block>
   <block id="172ef5a94b4dd0aa120c6878fc29f70c" category="cell">8088</block>
   <block id="168342a53455f99d5b1d8d7d95e99567" category="cell">S3 へのバックアップを API で呼び出します</block>
   <block id="dd8679112f038315d04028c46da1fef7" category="cell">Cloud Manager による DNS 解決に使用されます</block>
@@ -466,7 +450,6 @@
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
   <block id="bff0ab4dab26d38051ade7a231a2a6f2" category="sidebar">FSX for ONTAP について説明します</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">クイックスタート</block>
-  <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="sidebar">要件</block>
   <block id="767c313289c6f36a3348709b853c6020" category="sidebar">ONTAP には Amazon FSX を使用します</block>
   <block id="b717787f66ea65a295fc51e1e85baeb1" category="sidebar">作業環境の作成と管理</block>
   <block id="9be5a2eae9bab39aee7d0161c137cd43" category="sidebar">ボリュームを作成してマウント</block>
@@ -497,4 +480,18 @@
   <block id="b2e8050cf49252f7b06bd379448c5e15" category="paragraph">Cloud Manager を使用して、ストレージ環境間でデータをレプリケートできます。ONTAP レプリケーション用に FSX を構成するには、を参照してください<block ref="063d7001b249d0164d3c6e7cd82a78db" category="inline-link-rx"></block>。</block>
   <block id="12fc3818f5e3f781c2bf4eb8b8d50ffc" category="paragraph">Cloud Manager の Cloud Sync を使用して、同期関係を作成できます。同期関係を設定するには、を参照してください<block ref="3bb02b9d4fba268ff940f67f5abfe3eb" category="inline-link-rx"></block>。</block>
   <block id="9d662ce44c324aa67c253be893864c71" category="paragraph">ボリュームを追加する前に、 ONTAP 作業環境用の Amazon FSX を作成する必要があります。する必要があります <block ref="afb5d18769390df2b32a585a478c27d2" category="inline-link-macro-rx"></block>。</block>
+  <block id="a4f557d4dc5603464fae9d733ed96263" category="paragraph">FSX for ONTAP セキュリティグループには、インバウンドとアウトバウンドの両方のルールが必要です。この図は、 ONTAP ネットワーク構成およびセキュリティグループ要件の FSX を示しています。</block>
+  <block id="804e1541ef4556a247ad9499202fb6e2" category="inline-image-macro">ONTAP セキュリティグループ構成の FSX の図。</block>
+  <block id="bca6ab005ba14ce4d09f6862e9acbd0d" category="paragraph"><block ref="bca6ab005ba14ce4d09f6862e9acbd0d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="666efafa7314f1d36acc1873a7effea1" category="paragraph">AWS 管理コンソールを使用して、 ENI に関連付けられたセキュリティグループを見つける必要があります。</block>
+  <block id="c92acc92060e36c3ae0a3a3122e468f4" category="list-text">AWS 管理コンソールで FSX for ONTAP ファイルシステムを開き、ファイルシステム ID のリンクをクリックします。</block>
+  <block id="d2d5e146dd6d2c739d48382f6d5819c9" category="inline-image-macro">AWS 管理コンソールの FSX ファイルシステム ID のスクリーンショット。</block>
+  <block id="cca060d5cddf22c436c0562c0973058c" category="paragraph"><block ref="cca060d5cddf22c436c0562c0973058c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5632127664c2b29ceeab7c876c04cb44" category="list-text">[ ネットワークとセキュリティ *] タブで、優先サブネットまたはスタンバイサブネットのネットワークインターフェイス ID をクリックします。</block>
+  <block id="6327ad0d858ec91f26ade294f909e613" category="inline-image-macro">ONTAP ENI ID の FSX のスクリーンショット。</block>
+  <block id="1e4b8ac6263ef6c244c27218023baf3d" category="paragraph"><block ref="1e4b8ac6263ef6c244c27218023baf3d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ffd35e1082660bfc05812c970b3ce90c" category="list-text">ネットワーク・インターフェイス・テーブルのセキュリティ・グループまたはネットワーク・インターフェイスの * 詳細 * セクションをクリックします。</block>
+  <block id="e3771f1e1acdf77c7948d3e7e2810d3c" category="inline-image-macro">ONTAP セキュリティグループ ID の FSX のスクリーンショット。</block>
+  <block id="89730a660159734979b6ba72583ec695" category="paragraph"><block ref="89730a660159734979b6ba72583ec695" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5e1a521c9d06fa71faeacb00ad3819f7" category="paragraph">メディエーターの特定のポートを開く必要はありませんまた 'FSX for ONTAP のノード間でポートを開く必要もありません</block>
 </blocks>
