@@ -567,7 +567,7 @@
         </li>
         
         <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com/ja-jp/cloud/">Cloud Docs</a>
+          <a href="https://docs.netapp.com/us-en/cloud/">Cloud Docs</a>
         </li>
         
 
@@ -605,7 +605,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-01 14:42:38 +0000">04/01/2022</time>
+    <time datetime="2022-04-11 16:03:18 +0000">04/11/2022</time>
     
   
 
@@ -623,13 +623,39 @@
 <h2 id="ontap-の-fsx-のルール">ONTAP の FSX のルール</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>FSX for ONTAP のセキュリティグループには、インバウンドとアウトバウンドの両方のルールが必要です。</p>
+<p>FSX for ONTAP セキュリティグループには、インバウンドとアウトバウンドの両方のルールが必要です。この図は、 ONTAP ネットワーク構成およびセキュリティグループ要件の FSX を示しています。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../media/diagram-fsx-security-groups.png" alt="ONTAP セキュリティグループ構成の FSX の図。"></span></p>
+</div>
+<div class="paragraph">
+<p>AWS 管理コンソールを使用して、 ENI に関連付けられたセキュリティグループを見つける必要があります。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>AWS 管理コンソールで FSX for ONTAP ファイルシステムを開き、ファイルシステム ID のリンクをクリックします。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot-fsx-file-system-id.png" alt="AWS 管理コンソールの FSX ファイルシステム ID のスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>[ ネットワークとセキュリティ *] タブで、優先サブネットまたはスタンバイサブネットのネットワークインターフェイス ID をクリックします。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot-fsx-eni-id.png" alt="ONTAP ENI ID の FSX のスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>ネットワーク・インターフェイス・テーブルのセキュリティ・グループまたはネットワーク・インターフェイスの * 詳細 * セクションをクリックします。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot-fsx-security-group-id.png" alt="ONTAP セキュリティグループ ID の FSX のスクリーンショット。"></span></p>
+</div>
+</li>
+</ol>
 </div>
 <div class="sect2">
 <h3 id="インバウンドルール">インバウンドルール</h3>
-<div class="paragraph">
-<p>定義済みセキュリティグループのインバウンドルールの送信元は 0.0.0.0/0 です。</p>
-</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 10%;">
@@ -812,7 +838,7 @@
 <div class="sect3">
 <h4 id="高度なアウトバウンドルール">高度なアウトバウンドルール</h4>
 <div class="paragraph">
-<p>発信トラフィックに固定ルールが必要な場合は、次の情報を使用して、 FSX for ONTAP による発信通信に必要なポートのみを開くことができます。</p>
+<p>メディエーターの特定のポートを開く必要はありませんまた 'FSX for ONTAP のノード間でポートを開く必要もありません</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -980,28 +1006,6 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ間 LIF</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">バックアップエンドポイントまたはリストアエンドポイント</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">S3 へのバックアップ処理とリストア処理 フィーチャー（ Feature ）</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">クラスタ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">すべてのトラフィック</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">すべてのトラフィック</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 つのノード上のすべての LIF</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">もう一方のノードのすべての LIF</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ間通信（ Cloud Volumes ONTAP HA のみ）</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TCP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3000</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ノード管理 LIF</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">HA メディエータ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ZAPI コール（ Cloud Volumes ONTAP HA のみ）</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ICMP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ノード管理 LIF</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">HA メディエータ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">キープアライブ（ Cloud Volumes ONTAP HA のみ）</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DHCP</p></td>
@@ -1281,13 +1285,7 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">AWS および ONTAP への API コール、およびネットアップへの AutoSupport メッセージの送信</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">API コール</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TCP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3000</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP HA メディエーター</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP HA メディエーターとの通信</p></td>
-</tr>
-<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">API コール</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">TCP</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">8088</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">S3 へのバックアップ</p></td>
