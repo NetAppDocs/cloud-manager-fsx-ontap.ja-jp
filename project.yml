@@ -49,15 +49,15 @@ homepage:
   tiles:
   - title: はじめに
     links:
-    - title: 新機能
+    - title: リリースノート
       url: "/whats-new.html"
     - title: Amazon FSX for ONTAP の詳細をご覧ください
       url: "/start/concept-fsx-aws.html"
     - title: クイックスタート
       url: "/start/task-getting-started-fsx.html"
-    - title: ONTAP の FSX のアクセス許可を設定します
+    - title: 権限を設定します
       url: "/requirements/task-setting-up-permissions-fsx.html"
-    - title: ONTAP の FSX のセキュリティグループルール
+    - title: セキュリティグループのルール
       url: "/requirements/reference-security-groups-fsx.html"
   - title: ONTAP には Amazon FSX を使用します
     links:
@@ -81,4 +81,6 @@ homepage:
       url: https://cloud.netapp.com/blog
     - title: クラウドに関する Web セミナー
       url: https://cloud.netapp.com/events
-product-family: {}
+product-family:
+  name: Cloud Manager
+  repo: cloud-manager-family

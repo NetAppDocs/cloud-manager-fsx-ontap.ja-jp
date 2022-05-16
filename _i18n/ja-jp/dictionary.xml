@@ -451,7 +451,6 @@
   <block id="9be5a2eae9bab39aee7d0161c137cd43" category="sidebar">ボリュームを作成してマウント</block>
   <block id="ba96e9a97f70e26f5839a4ab40b0081b" category="sidebar">ボリュームとデータサービスを管理します</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
-  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
   <block id="6b5b1212807dea3d5cd6a3fb67f2d1d6" category="sidebar">作業環境の作成と管理</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログコミュニティ</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
@@ -540,4 +539,6 @@
   <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">[ * お問い合わせ * ] をクリックして、ネットアップ・テクニカル・サポートの電話番号を検索してください。</block>
   <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">[ * 問題 を開く * ] をクリックし、いずれかのオプションを選択して、 [ * 送信 * ] をクリックします。</block>
   <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">ネットアップの担当者がケースを確認し、すぐに対応を開始します。</block>
+  <block id="9a11eb5da5d06e3593dc6b41553d97e5" category="sidebar">権限を設定します</block>
+  <block id="390a3dfacd9551e05363b9eb09a0464c" category="sidebar">セキュリティグループのルール</block>
 </blocks>
