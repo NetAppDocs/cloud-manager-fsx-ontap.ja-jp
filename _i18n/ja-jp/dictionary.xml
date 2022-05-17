@@ -541,4 +541,5 @@
   <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">ネットアップの担当者がケースを確認し、すぐに対応を開始します。</block>
   <block id="9a11eb5da5d06e3593dc6b41553d97e5" category="sidebar">権限を設定します</block>
   <block id="390a3dfacd9551e05363b9eb09a0464c" category="sidebar">セキュリティグループのルール</block>
+  <block id="5e89288adba0036bb013893540161d9f" category="list-text">現時点では、CLIを使用したFSX for ONTAP からのSnapMirrorレプリケーションがサポートされています。</block>
 </blocks>
