@@ -53,10 +53,7 @@ image:screenshot-fsx-security-group-id.png["ONTAP セキュリティグループ
 | すべての ICMP | すべて | インスタンスの ping を実行します 
 
 
-| HTTP | 80 | クラスタ管理 LIF の IP アドレスを使用した System Manager Web コンソールへの HTTP アクセス 
-
-
-| HTTPS | 443 | クラスタ管理 LIF の IP アドレスを使用した System Manager Web コンソールへの HTTPS アクセス 
+| HTTPS | 443 | fsxadmin管理LIFへのコネクタからアクセスし、API呼び出しをFSXに送信します 
 
 
 | SSH | 22 | クラスタ管理 LIF またはノード管理 LIF の IP アドレスへの SSH アクセス 
