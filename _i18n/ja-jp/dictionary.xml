@@ -539,6 +539,7 @@
   <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">ネットアップの担当者がケースを確認し、すぐに対応を開始します。</block>
   <block id="9a11eb5da5d06e3593dc6b41553d97e5" category="sidebar">権限を設定します</block>
   <block id="390a3dfacd9551e05363b9eb09a0464c" category="sidebar">セキュリティグループのルール</block>
-  <block id="5e89288adba0036bb013893540161d9f" category="list-text">現時点では、CLIを使用したFSX for ONTAP からのSnapMirrorレプリケーションがサポートされています。</block>
   <block id="1960d6022dcb5a2b9a687d1f6cbd8931" category="cell">fsxadmin管理LIFへのコネクタからアクセスし、API呼び出しをFSXに送信します</block>
+  <block id="63b0ed0469bbbea547bdb73446ef6e8f" category="inline-link-macro">ONTAP CLIを使用してサポート</block>
+  <block id="8e134e23e64a574b08ee8f4a104b33a7" category="list-text">この時点で、ONTAP のFSXからのSnapMirrorレプリケーションはです <block ref="cab6d77018231492052744a391f5eb40" category="inline-link-macro-rx"></block>。</block>
 </blocks>
