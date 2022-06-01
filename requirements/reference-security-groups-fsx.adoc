@@ -29,15 +29,15 @@ AWS 管理コンソールを使用して、 ENI に関連付けられたセキ�
 .手順
 . AWS 管理コンソールで FSX for ONTAP ファイルシステムを開き、ファイルシステム ID のリンクをクリックします。
 +
-image:screenshot-fsx-file-system-id.png["AWS 管理コンソールの FSX ファイルシステム ID のスクリーンショット。"]
+image:screenshot-fsx-file-system-id-zoom.png["AWS 管理コンソールの FSX ファイルシステム ID のスクリーンショット。"]
 
 . [ ネットワークとセキュリティ *] タブで、優先サブネットまたはスタンバイサブネットのネットワークインターフェイス ID をクリックします。
 +
-image:screenshot-fsx-eni-id.png["ONTAP ENI ID の FSX のスクリーンショット。"]
+image:screenshot-fsx-eni-id-zoom.png["ONTAP ENI ID の FSX のスクリーンショット。"]
 
 . ネットワーク・インターフェイス・テーブルのセキュリティ・グループまたはネットワーク・インターフェイスの * 詳細 * セクションをクリックします。
 +
-image:screenshot-fsx-security-group-id.png["ONTAP セキュリティグループ ID の FSX のスクリーンショット。"]
+image:screenshot-fsx-security-group-id-zoom.png["ONTAP セキュリティグループ ID の FSX のスクリーンショット。"]
 
 
 
