@@ -18,6 +18,20 @@ Amazon FSX for ONTAP の新機能をご確認ください。
 
 
 
+== 2022年7月3日
+
+* 単一または複数のアベイラビリティゾーンHA導入モデルを選択できるようになりました。
++
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-ontap-working-environment["ONTAP 作業環境用の FSX を作成します"]
+
+* AWS GovCloudアカウント認証はCloud Managerでサポートされるようになりました。
++
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html#set-up-the-iam-role["IAM ロールを設定します"]
+
+
+
+
+
 == 2022 年 2 月 27 日
 
 

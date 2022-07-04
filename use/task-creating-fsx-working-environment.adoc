@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: use/task-creating-fsx-working-environment.html 
-keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment 
+keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones 
 summary: Cloud Manager では、 ONTAP 作業環境用の FSX を作成して、ボリュームの追加や追加のデータサービスの管理を行うことができます。 
 ---
 = Amazon FSX for ONTAP 作業環境の作成と管理
@@ -60,13 +60,21 @@ image:screenshot_add_fsx_credentials.png["FSX for ONTAP のクレデンシャル
 
 . リージョンと VPC の情報を指定します。
 +
-.. 各ノードが専用のアベイラビリティゾーンに配置されるように、少なくとも 2 つのアベイラビリティゾーンのサブネットを使用するリージョンと VPC を選択します。
-.. デフォルトのセキュリティグループをそのまま使用するか、別のセキュリティグループを選択します。 link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["AWS セキュリティグループ"^] インバウンドおよびアウトバウンドトラフィックを制御します。これらの情報は AWS 管理者が設定し、に関連付けます link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS Elastic Network Interface （ ENI ）"^]。
-.. 各ノードのアベイラビリティゾーンとサブネットを選択してください。
-.. 「 * 次へ * 」をクリックします。
+.. 単一アベイラビリティゾーン*または*複数のアベイラビリティゾーン* HA配置モデルを選択します。
 +
+image:screenshot-ha-deployment-models.png["単一または複数のアベイラビリティゾーン導入モデルの選択オプションボタンのスクリーンショット。"]
+
+.. リージョンとVPCを選択します。
++
+[NOTE]
+====
+複数のアベイラビリティゾーンについては、各ノードが専用のアベイラビリティゾーンになるように、少なくとも2つのアベイラビリティゾーンのサブネットを選択してください。
+
 image:screenshot_add_fsx_region.png["ONTAP 向け FSX にリージョンと VPC を追加するスクリーンショット"]
 
+====
+.. デフォルトのセキュリティグループをそのまま使用するか、別のセキュリティグループを選択します。 link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["AWS セキュリティグループ"^] インバウンドおよびアウトバウンドトラフィックを制御します。これらの情報は AWS 管理者が設定し、に関連付けます link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS Elastic Network Interface （ ENI ）"^]。
+.. 「 * 次へ * 」をクリックします。
 
 
 . _cidr Range_Empty を選択し、 * Next * をクリックすると、使用可能な範囲が自動的に設定されます。必要に応じて、を使用できます https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-transit-gateway.html["AWS 転送ゲートウェイ"^] 範囲を手動で設定します。
@@ -124,13 +132,12 @@ image:screenshot_fsx_working_environment_discover.png["Amazon FSX for ONTAP の�
 
 . 既存のクレデンシャルを選択するか、新しいクレデンシャルを「 * 次へ * 」をクリックします。
 . 追加する AWS リージョンと作業環境を選択します。
-+
-image:screenshot_fsx_working_environment_select.png["AWS リージョンと作業環境を選択する際のスクリーンショット"]
-
 . [ 追加（ Add ） ] をクリックします。
 
 
 Cloud Manager に、検出された ONTAP ファイルシステムの FSX が表示されます。
+
+image:screenshot_fsx_working_environment_select.png["AWS リージョンと作業環境を選択する際のスクリーンショット"]
 
 
 

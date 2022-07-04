@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: requirements/task-setting-up-permissions-fsx.html 
-keywords: fsx for ontap, iam, user role, permissions 
+keywords: fsx for ontap, iam, user role, permissions, aws govcloud, govcloud, credentials 
 summary: Amazon FSX for ONTAP の作業環境を作成または管理するには、 FSX for ONTAP 権限を持つ IAM ユーザロール用の AWS アクセスキーとシークレットキーが必要です。 
 ---
 = ONTAP の FSX のアクセス許可を設定します
@@ -20,7 +20,7 @@ ONTAP 作業環境用の Amazon FSX を作成または管理するには、 Clou
 
 == IAM ロールを設定します
 
-Cloud Manager SaaS で役割を引き受けることを可能にする IAM ロールを設定します。
+Cloud Managerにロールを引き継ぐことができるようにIAMロールを設定します。
 
 .手順
 . ターゲットアカウントの IAM コンソールに移動します。
@@ -30,7 +30,12 @@ Cloud Manager SaaS で役割を引き受けることを可能にする IAM ロ�
 
 +
 ** 信頼されるエンティティのタイプ * で、 * AWS アカウント * を選択します。
-** 別の AWS アカウント * を選択し、 Cloud Manager SaaS の ID として 952013314444 を入力してください
+** 別のAWSアカウント*を選択し、Cloud ManagerのIDを入力します。
++
+*** Cloud Manager SaaSの場合：952013314444
+*** AWS GovCloud（US）の場合：
+
+
 ** 次の権限を含むポリシーを作成します。
 +
 [source, json]
@@ -54,6 +59,9 @@ Cloud Manager SaaS で役割を引き受けることを可能にする IAM ロ�
     ]
 }
 ----
++
+から Connector 展開ポリシーを表示します link:https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager Policies ページ"]。
+
 
 
 . IAM ロールのロール ARN をコピーして、次の手順で Cloud Manager に貼り付けることができます。
@@ -78,6 +86,17 @@ image:screenshot_settings_icon.gif["Cloud Manager コンソールの右上にあ
 +
 .. * クレデンシャルの場所 * ：「 * Amazon Web Services > Cloud Manager * 」を選択します。
 .. * クレデンシャルの定義 * ： IAM ロールの ARN （ Amazon リソース名）を指定します。
++
+[NOTE]
+====
+*** AWS GovCloud（US）アカウントを使用している場合は、* AWS GovCloud（US）アカウントを使用している*を確認します。
++
+image:screenshot-govcloud-checkbox.png["GovCloud（US）アカウントのチェックボックスのスクリーンショット。"]
+
+*** AWS GovCloudを使用して認証すると、SaaSプラットフォームが無効になります。これはお客様のアカウントへの永続的な変更であり、元に戻すことはできません。
+
+
+====
 .. * 確認 * ：新しいクレデンシャルの詳細を確認し、 * 追加 * をクリックします。
 
 
