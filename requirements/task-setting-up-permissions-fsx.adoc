@@ -33,7 +33,7 @@ Cloud Managerにロールを引き継ぐことができるようにIAMロール�
 ** 別のAWSアカウント*を選択し、Cloud ManagerのIDを入力します。
 +
 *** Cloud Manager SaaSの場合：952013314444
-*** AWS GovCloud（US）の場合：
+*** AWS GovCloud（US）の場合：033442085313
 
 
 ** 次の権限を含むポリシーを作成します。
@@ -52,6 +52,7 @@ Cloud Managerにロールを引き継ぐことができるようにIAMロール�
                 "ec2:CreateTags",
                 "kms:Describe*",
                 "kms:List*",
+                "kms:CreateGrant",
                 "iam:CreateServiceLinkedRole"
             ],
             "Resource": "*"
