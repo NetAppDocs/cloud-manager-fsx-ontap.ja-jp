@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: use/task-creating-fsx-working-environment.html 
-keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones 
-summary: Cloud Manager では、 ONTAP 作業環境用の FSX を作成して、ボリュームの追加や追加のデータサービスの管理を行うことができます。 
+keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover 
+summary: Cloud Managerを使用すると、ボリュームや追加のデータサービスを追加および管理するためのFSX for ONTAP 作業環境を作成または検出できます。 
 ---
-= Amazon FSX for ONTAP 作業環境の作成と管理
+= Amazon FSX for ONTAP の作業環境を作成または検出します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Cloud Manager では、 ONTAP 作業環境用の FSX を作成して、
 
 
 [role="lead"]
-Cloud Manager を使用すると、ボリュームや追加のデータサービスを追加および管理するために、 ONTAP 作業環境用の FSX を作成および管理できます。
+Cloud Managerを使用すると、ボリュームや追加のデータサービスを追加および管理するためのFSX for ONTAP 作業環境を作成または検出できます。
 
 
 
@@ -91,7 +91,7 @@ image:screenshot_add_fsx_encryption.png["ONTAP の FSX のデフォルトのマ�
 
 . ストレージを設定します。
 +
-.. スループット、容量、単位を選択します。
+.. スループット、容量、単位を選択します。スループット容量はいつでも変更できます。
 .. 必要に応じて、 IOPS 値を指定できます。IOPS の値を指定しない場合、 Cloud Manager は、入力した合計容量の 1GiB あたりの 3 IOPS に基づいてデフォルト値を設定します。たとえば、合計容量に 2 、 000GiB と入力した場合、 IOPS の値が指定されていなければ、有効な IOPS の値は 6 、 000 に設定されます。
 +
 
@@ -122,7 +122,37 @@ Cloud Manager を使用して、 FSX for ONTAP 作業環境にボリュームを
 
 == 既存の FSX for ONTAP ファイルシステムを検出します
 
-AWS 管理コンソールを使用して ONTAP ファイルシステムの FSX を作成した場合、または以前に削除した作業環境をリストアする場合は、 Cloud Manager を使用して検出できます。
+ONTAP 管理コンソールを使用してFSX forファイルシステムを作成した場合、または以前に削除した作業環境をリストアする場合は、**My Opportunities **を使用して検出するか、手動で検出できます。
+
+
+
+=== Opportunityを使って発見する
+
+以前にCloud ManagerにAWSクレデンシャルを提供していた場合、* My Opportunities *は、ONTAP ファイルシステム用のFSXを自動的に検出して、Cloud Managerを使用して追加および管理することを提案します。使用可能なデータサービスを確認することもできます。
+
+.手順
+. Cloud Managerで、* My Opportunities *タブをクリックします。
+. ONTAP ファイルシステムで検出されたFSXの数が表示されます。[* Discover（検出）]をクリックします
++
+image:screenshot-opportunities.png["FSX for ONTAP のMy Opportunitiesページのスクリーンショット。"]
+
+. 1つ以上のファイルシステムを選択し、*検出*をクリックしてキャンバスに追加します。
+
+
+[NOTE]
+====
+* 名前が指定されていないクラスタを選択すると、クラスタの名前を入力するよう求めるプロンプトが表示されます。
+* Cloud ManagerでONTAP ファイルシステムのFSXを管理するために必要なクレデンシャルがないクラスタを選択すると、必要な権限が設定されたクレデンシャルを選択するように求められます。
+
+
+====
+
+
+=== 手動で検出
+
+AWS管理コンソールを使用して追加したFSX for ONTAP ファイルシステムや、Cloud Managerから以前に削除したFSX for Cloudファイルシステムを手動で検出することができます。
+
+image:screenshot_fsx_working_environment_select.png["AWS リージョンと作業環境を選択する際のスクリーンショット"]
 
 .手順
 . Cloud Manager で、 * 作業環境の追加 * をクリックし、 * Amazon Web Services * を選択します。
@@ -138,46 +168,3 @@ image:screenshot_fsx_working_environment_discover.png["Amazon FSX for ONTAP の�
 Cloud Manager に、検出された ONTAP ファイルシステムの FSX が表示されます。
 
 image:screenshot_fsx_working_environment_select.png["AWS リージョンと作業環境を選択する際のスクリーンショット"]
-
-
-
-== ワークスペースから ONTAP の FSX を削除します
-
-ONTAP の FSX は、 ONTAP アカウントまたはボリュームの FSX を削除することなく、 Cloud Manager から削除できます。FSX for ONTAP の作業環境は、いつでも Cloud Manager に追加できます。
-
-.手順
-. 作業環境を開きます。AWS にコネクタがない場合は、プロンプト画面が表示されます。これは無視して作業環境の削除に進んでください。
-. ページの右上にあるアクションメニューを選択し、 * ワークスペースから削除 * をクリックします。
-+
-image:screenshot_fsx_working_environment_remove.png["Cloud Manager インターフェイスから ONTAP の FSX を削除するオプションのスクリーンショット。"]
-
-. ONTAP 用の FSX を Cloud Manager から削除するには、 * Remove * をクリックします。
-
-
-
-
-== ONTAP 作業環境の FSX を削除します
-
-ONTAP の FSX は、 Cloud Manager から削除できます。
-
-.作業を開始する前に
-* 実行する必要があります link:task-manage-fsx-volumes.html#delete-volumes["すべてのボリュームを削除します"] ファイルシステムに関連付けられています。
-
-
-
-NOTE: ボリュームを削除または削除するには、 AWS でアクティブなコネクタが必要になります。
-
-* 障害ボリュームが含まれている作業環境は削除できません。ONTAP ファイルシステムの FSX を削除する前に、 AWS 管理コンソールまたは CLI を使用して障害ボリュームを削除する必要があります。
-
-
-
-WARNING: この操作を実行すると、作業環境に関連付けられているすべてのリソースが削除されます。この操作を元に戻すことはできません。
-
-.手順
-. 作業環境を開きます。AWS にコネクタがない場合は、プロンプト画面が表示されます。これは無視して作業環境の削除に進んでください。
-. ページの右上にあるアクションメニューを選択し、 * 削除 * をクリックします。
-+
-image:screenshot_fsx_working_environment_delete.png["Cloud Manager インターフェイスからの ONTAP の FSX の削除オプションのスクリーンショット。"]
-
-. 作業環境の名前を入力し、 * 削除 * をクリックします。
-

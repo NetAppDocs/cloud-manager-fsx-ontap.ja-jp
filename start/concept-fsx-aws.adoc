@@ -64,7 +64,6 @@ Cloud Manager や Cloud Manager のマイクロサービスに関する一般的
 
 == 制限
 
-* Cloud Manager は、オンプレミスまたは Cloud Volumes ONTAP から ONTAP 用 FSX にのみデータをレプリケートできます。
-* この時点で、 ONTAP CLI 、 ONTAP API 、または Cloud Manager API を使用して iSCSI ボリュームを作成できます。
+* 現時点で、Cloud Managerは、オンプレミスまたはCloud Volumes ONTAP からONTAP のFSXに、ONTAP のFSXからオンプレミスまたはONTAP システムの他のFSXにデータをレプリケートできます。
 * この時点で、ONTAP のFSXからのSnapMirrorレプリケーションはです link:https://docs.netapp.com/us-en/ontap/data-protection/index.html["ONTAP CLIを使用してサポート"^]。
 

@@ -26,8 +26,10 @@ sidebar:
       url: "/requirements/reference-security-groups-fsx.html"
   - title: ONTAP には Amazon FSX を使用します
     entries:
-    - title: 作業環境の作成と管理
+    - title: 作業環境を作成または検出します
       url: "/use/task-creating-fsx-working-environment.html"
+    - title: 作業環境の管理
+      url: "/use/task-manage-working-environment.html"
     - title: ボリュームを作成してマウント
       url: "/use/task-add-fsx-volumes.html"
     - title: ボリュームとデータサービスを管理します
@@ -56,8 +58,10 @@ homepage:
       url: "/requirements/reference-security-groups-fsx.html"
   - title: ONTAP には Amazon FSX を使用します
     links:
-    - title: 作業環境の作成と管理
+    - title: 作業環境を作成または検出します
       url: "/use/task-creating-fsx-working-environment.html"
+    - title: 作業環境を管理します
+      url: "/use/task-manage-working-environment.html"
     - title: ボリュームを作成してマウント
       url: "/use/task-add-fsx-volumes.html"
     - title: ボリュームとデータサービスを管理します

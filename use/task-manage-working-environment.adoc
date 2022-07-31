@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: use/task-manage-working-environment.html 
+keywords: amazon fsx for ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput, 
+summary: Cloud Managerを使用すると、FSX for ONTAP の作業環境を管理できます。実行環境の削除や削除を実行できます。 
+---
+= Amazon FSX for ONTAP 作業環境を管理します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cloud Managerを使用すると、FSX for ONTAP の作業環境を管理できます。実行環境の削除や削除を実行できます。
+
+
+
+== スループット容量を変更します
+
+スループット容量は、ONTAP 作業環境でFSXを作成したあとにいつでも変更できます。
+
+アクティブなが必要です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS のコネクタ"^]。
+
+.手順
+. FSX for ONTAP 作業環境を開きます。
+. [*概要*（Overview *）]タブで、[*機能*（* Features *）]をクリックし
++
+image:screenshot-change-thruput.png["容量の変更の場所のスクリーンショット。"]
+
+. 鉛筆のアイコン（image:icon-pencil.png["鉛筆の編集アイコンの画像。"]）をクリックして、* Throughput Capacity *編集ページを開きます。
+. ドロップダウンから新しいスループット容量を選択し、「* Update *」をクリックします。この変更が反映されるまでに最大25分かかることがあり、データアクセスが中断されることはありません。
+
+
+
+
+== ワークスペースから ONTAP の FSX を削除します
+
+ONTAP の FSX は、 ONTAP アカウントまたはボリュームの FSX を削除することなく、 Cloud Manager から削除できます。FSX for ONTAP の作業環境は、いつでも Cloud Manager に追加できます。
+
+.手順
+. 作業環境を開きます。AWS にコネクタがない場合は、プロンプト画面が表示されます。これは無視して作業環境の削除に進んでください。
+. ページの右上にあるアクションメニューを選択し、 * ワークスペースから削除 * をクリックします。
++
+image:screenshot_fsx_working_environment_remove.png["Cloud Manager インターフェイスから ONTAP の FSX を削除するオプションのスクリーンショット。"]
+
+. ONTAP 用の FSX を Cloud Manager から削除するには、 * Remove * をクリックします。
+
+
+
+
+== ONTAP 作業環境の FSX を削除します
+
+ONTAP の FSX は、 Cloud Manager から削除できます。
+
+.作業を開始する前に
+* 実行する必要があります link:task-manage-fsx-volumes.html#delete-volumes["すべてのボリュームを削除します"] ファイルシステムに関連付けられています。
+
+
+
+NOTE: ボリュームを削除または削除するには、 AWS でアクティブなコネクタが必要になります。
+
+* 障害ボリュームが含まれている作業環境は削除できません。ONTAP ファイルシステムの FSX を削除する前に、 AWS 管理コンソールまたは CLI を使用して障害ボリュームを削除する必要があります。
+
+
+
+WARNING: この操作を実行すると、作業環境に関連付けられているすべてのリソースが削除されます。この操作を元に戻すことはできません。
+
+.手順
+. 作業環境を開きます。AWS にコネクタがない場合は、プロンプト画面が表示されます。これは無視して作業環境の削除に進んでください。
+. ページの右上にあるアクションメニューを選択し、 * 削除 * をクリックします。
++
+image:screenshot_fsx_working_environment_delete.png["Cloud Manager インターフェイスからの ONTAP の FSX の削除オプションのスクリーンショット。"]
+
+. 作業環境の名前を入力し、 * 削除 * をクリックします。
+

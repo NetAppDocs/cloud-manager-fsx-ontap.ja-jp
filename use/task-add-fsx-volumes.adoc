@@ -20,9 +20,7 @@ summary: 作業環境のセットアップ後、 ONTAP ボリューム、クロ�
 
 == ボリュームを作成します
 
-Cloud Manager では、 FSX for ONTAP 作業環境から NFS ボリュームと CIFS ボリュームを作成および管理できます。ONTAP CLI を使用して作成された NFS ボリュームと CIFS ボリュームは、 FSX for ONTAP の作業環境にも表示されます。
-
-iSCSI ボリュームは、 ONTAP CLI 、 ONTAP API 、または Cloud Manager API を使用して作成し、 FSX for ONTAP 作業環境で Cloud Manager を使用して管理できます。
+Cloud Managerでは、FSX for ONTAP 作業環境からNFS、CIFS、およびiSCSIのボリュームを作成および管理できます。ONTAP CLI を使用して作成したボリュームは、 FSX for ONTAP の作業環境にも表示されます。
 
 必要なもの：
 
@@ -53,7 +51,7 @@ image:screenshot_fsx_volume_details.png["ONTAP ボリューム作成の FSX の�
 
 
 
-. * プロトコル * ： NFS または CIFS ボリューム・プロトコルを選択します。
+. *プロトコル*：NFS、CIFS、またはiSCSIボリューム・プロトコルを選択します。
 +
 .. NFS の場合：
 +
@@ -105,6 +103,20 @@ TIP: この作業環境で最初に CIFS ボリュームを使用する場合は
 | NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、 * NTP サーバ設定を有効にする * を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Cloud Manager 自動化に関するドキュメント"^] を参照してください。 
 |===
 *** ワークグループセットアップを選択した場合は、 CIFS 用に設定されているワークグループのサーバとワークグループ名を入力します。
+
+
+.. iSCSIの場合：既存のイニシエータグループを使用するか、新しいイニシエータグループを作成して、LUNに接続できます。既存のイニシエータグループをマッピングするには、オペレーティングシステムおよび1つ以上のイニシエータグループを選択します。
++
+新しいイニシエータグループを作成します。
+
++
+... [**新規作成**]を選択します。
+... 使用しているオペレーティングシステムを選択します。
+... をクリックして、1つ以上のホストiSCSI修飾名（IQN）を追加します。既存のIQNを選択するか、新しいIQNを追加できます。ボリュームのIQNを確認する方法については、を参照してください link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connect-lun.html["ホストをLUNに接続します"^]。
+... **イニシエータグループ名**を入力してください。
++
+image:screenshot-volume-protocol-iscsi.png["ONTAP ボリューム作成用のiSCSI構成FSXのスクリーンショット。"]
+
 
 
 .. 「 * 次へ * 」をクリックします。

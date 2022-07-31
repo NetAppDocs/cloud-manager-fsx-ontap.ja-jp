@@ -34,8 +34,6 @@
   <block id="0b0c82859f18c5cf1bcb10330fab56bd" category="doc">ONTAP 用の Amazon FSX ボリュームを作成します</block>
   <block id="d950ccfec30779e51b9fd6a8aecbb558" category="paragraph">作業環境をセットアップしたら、 ONTAP ボリュームの FSX を作成してマウントできます。</block>
   <block id="1c27e11c5e65b93611e6f5ce640f8184" category="section-title">ボリュームを作成します</block>
-  <block id="59882fc1ce16f5b47ed90394ec3dcd4a" category="paragraph">Cloud Manager では、 FSX for ONTAP 作業環境から NFS ボリュームと CIFS ボリュームを作成および管理できます。ONTAP CLI を使用して作成された NFS ボリュームと CIFS ボリュームは、 FSX for ONTAP の作業環境にも表示されます。</block>
-  <block id="3c5b27df21b3db8fbf99260b6111c620" category="paragraph">iSCSI ボリュームは、 ONTAP CLI 、 ONTAP API 、または Cloud Manager API を使用して作成し、 FSX for ONTAP 作業環境で Cloud Manager を使用して管理できます。</block>
   <block id="36ee27bc3fc7c617977b35534609c979" category="paragraph">必要なもの：</block>
   <block id="ad7e5366eeeef80a0cca58ed2f228e69" category="inline-link">AWS のコネクタ</block>
   <block id="5465e73e9a93dbf3732ca4677b294afe" category="inline-link-macro">AWS ：自己管理型の Microsoft AD を使用するための前提条件</block>
@@ -57,7 +55,6 @@
   <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">「 * 次へ * 」をクリックします。</block>
   <block id="4b1ceb73f69790897d4632ba712c7659" category="inline-image-macro">ONTAP ボリューム作成の FSX のボリュームの詳細フィールドと保護フィールドのスクリーンショット。</block>
   <block id="5d40ada61a97a98ef6bc45b298d20ee3" category="paragraph"><block ref="5d40ada61a97a98ef6bc45b298d20ee3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bf6c6b2753126136892e2e302ab0f03d" category="list-text">* プロトコル * ： NFS または CIFS ボリューム・プロトコルを選択します。</block>
   <block id="547a5c5cf72eabae707b477139de2cdd" category="list-text">NFS の場合：</block>
   <block id="2f13041935e5c3174ee293d608dc78fb" category="list-text">アクセス制御ポリシーを選択します。</block>
   <block id="b07a5c1cd32beac9e88c78df72edc8ec" category="list-text">NFS バージョンを選択します。</block>
@@ -103,9 +100,6 @@
   <block id="958a7394acfcee5d86c01e758be4f1c2" category="inline-image-macro">ボリュームのメニューを開いたときに実行可能な処理のスクリーンショット。</block>
   <block id="54b1fe05786347782bfe7e4a3e5de355" category="paragraph"><block ref="54b1fe05786347782bfe7e4a3e5de355" category="inline-image-macro-rx" type="image"></block></block>
   <block id="38aa5b57f82843fe74bb954a343bf4e0" category="list-text">指示に従ってボリュームをマウントします。</block>
-  <block id="45cc32a4d53a1360b7ced005a212045b" category="summary">Cloud Manager では、 ONTAP 作業環境用の FSX を作成して、ボリュームの追加や追加のデータサービスの管理を行うことができます。</block>
-  <block id="fdd19953ce3013e133d600a251e48a61" category="doc">Amazon FSX for ONTAP 作業環境の作成と管理</block>
-  <block id="11eed266884d218184bb4e52689ebf4d" category="paragraph">Cloud Manager を使用すると、ボリュームや追加のデータサービスを追加および管理するために、 ONTAP 作業環境用の FSX を作成および管理できます。</block>
   <block id="54e54adb33e337b5c804d6820b674b9a" category="inline-link-macro">Cloud Manager で IT を詳細に確認</block>
   <block id="e5375c42110b0016231f311272774e83" category="paragraph">最初のステップは、 ONTAP 作業環境用の FSX を作成することです。AWS 管理コンソールですでに ONTAP ファイルシステム用の FSX を作成している場合は、次の操作を実行できます <block ref="6a48f5b54424256e49232bb9af7a3d2f" category="inline-link-macro-rx"></block>。</block>
   <block id="faa4b07ffa49aaead3b9217354fd2e07" category="paragraph">Cloud Manager で FSX for ONTAP の作業環境を作成する前に、次のものが必要です。</block>
@@ -145,7 +139,6 @@
   <block id="5f7b5a6773d6263d66627f6153905a67" category="inline-image-macro">ONTAP の FSX のデフォルトのマスターキーを設定するスクリーンショット</block>
   <block id="18ee551ad9864bd46a8f5c35b900c641" category="paragraph"><block ref="18ee551ad9864bd46a8f5c35b900c641" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8c4dc6a5ccac057271e4a3a6b3213037" category="list-text">ストレージを設定します。</block>
-  <block id="552d35e7f28ee648c54813ab02c7dcb6" category="list-text">スループット、容量、単位を選択します。</block>
   <block id="44c0eb6e7e1c5fab261de20248c94791" category="list-text">必要に応じて、 IOPS 値を指定できます。IOPS の値を指定しない場合、 Cloud Manager は、入力した合計容量の 1GiB あたりの 3 IOPS に基づいてデフォルト値を設定します。たとえば、合計容量に 2 、 000GiB と入力した場合、 IOPS の値が指定されていなければ、有効な IOPS の値は 6 、 000 に設定されます。</block>
   <block id="72c6f5d2cfeaf6fab82a1ddb12885786" category="inline-image-macro">誤った IOPS 値が設定されている場合のエラーメッセージのスクリーンショット。</block>
   <block id="6885d04a0fda617d746b2123b3620e51" category="admonition">最小要件を満たしていない IOPS 値を指定すると、作業環境の追加時にエラーが発生します。<block ref="302f4fa129241cdd96ffd6dc709561e6" category="inline-image-macro-rx" type="image"></block></block>
@@ -162,7 +155,6 @@
   <block id="26682ff9a292960b61e97b937520b135" category="paragraph"><block ref="26682ff9a292960b61e97b937520b135" category="inline-image-macro-rx" type="image"></block></block>
   <block id="11fa7924f258843d0c6a8377f70c698c" category="paragraph">Cloud Manager を使用して、 FSX for ONTAP 作業環境にボリュームを追加できるようになりました。</block>
   <block id="e69624fa729e14e6bbcae0cf7889e100" category="section-title">既存の FSX for ONTAP ファイルシステムを検出します</block>
-  <block id="5a31f364855ed7d093e5ff0c2d6a0a6f" category="paragraph">AWS 管理コンソールを使用して ONTAP ファイルシステムの FSX を作成した場合、または以前に削除した作業環境をリストアする場合は、 Cloud Manager を使用して検出できます。</block>
   <block id="3eb13290c3d1e4b57acf05410a485779" category="list-text">Cloud Manager で、 * 作業環境の追加 * をクリックし、 * Amazon Web Services * を選択します。</block>
   <block id="6800849898be1086bb69e4658dd59629" category="list-text">Amazon FSX for ONTAP * を選択し、 * ここをクリック * します。</block>
   <block id="e574e1da19f282b48ebb67c362fbc5cc" category="inline-image-macro">Amazon FSX for ONTAP の作業環境を検出するスクリーンショット</block>
@@ -420,8 +412,6 @@
   <block id="1db5f4a1a813c32af28e132cf45cac0f" category="paragraph">Cloud Manager や Cloud Manager のマイクロサービスに関する一般的な質問については、 Cloud Manager のインラインチャットから始めることができます。</block>
   <block id="409924e4cb5560dcfd0701e1ac237826" category="paragraph">内の Cloud Manager またはマイクロサービスに固有のテクニカルサポートの問題については、 Cloud Manager アカウントレベルのシリアル番号を使用してネットアップサポートチケットを開くことができます。サポートを有効にするには、 Cloud Manager のシリアル番号を登録する必要があります。</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">制限</block>
-  <block id="0fad775ed670ca6bde434fb3d471a64d" category="list-text">Cloud Manager は、オンプレミスまたは Cloud Volumes ONTAP から ONTAP 用 FSX にのみデータをレプリケートできます。</block>
-  <block id="067fe115499332ebd701781ed653d1f8" category="list-text">この時点で、 ONTAP CLI 、 ONTAP API 、または Cloud Manager API を使用して iSCSI ボリュームを作成できます。</block>
   <block id="7a8c8dd27a87bf665545ae7d6521b93a" category="summary">Amazon FSX for ONTAP の導入を開始するには、いくつかの手順を実行します。</block>
   <block id="bf7ec532103402eaed4653738655f6ad" category="doc">Amazon FSX for ONTAP の利用を開始しましょう</block>
   <block id="fbda414afc779c9e1e46c45b74091adb" category="paragraph">FSX for ONTAP は、ほんの数ステップで開始できます。</block>
@@ -440,11 +430,9 @@
   <block id="bff0ab4dab26d38051ade7a231a2a6f2" category="sidebar">FSX for ONTAP について説明します</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">クイックスタート</block>
   <block id="767c313289c6f36a3348709b853c6020" category="sidebar">ONTAP には Amazon FSX を使用します</block>
-  <block id="b717787f66ea65a295fc51e1e85baeb1" category="sidebar">作業環境の作成と管理</block>
   <block id="9be5a2eae9bab39aee7d0161c137cd43" category="sidebar">ボリュームを作成してマウント</block>
   <block id="ba96e9a97f70e26f5839a4ab40b0081b" category="sidebar">ボリュームとデータサービスを管理します</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
-  <block id="6b5b1212807dea3d5cd6a3fb67f2d1d6" category="sidebar">作業環境の作成と管理</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログコミュニティ</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central のブログです</block>
@@ -558,4 +546,56 @@
   <block id="c03a6ecd27b7a5ea40ee52d99c7a247a" category="paragraph"><block ref="c03a6ecd27b7a5ea40ee52d99c7a247a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a9891de406800116bd9cb8226be9beb9" category="list-text">AWS GovCloudを使用して認証すると、SaaSプラットフォームが無効になります。これはお客様のアカウントへの永続的な変更であり、元に戻すことはできません。</block>
   <block id="319c3fdfa37c6b0ae4e91a351706489b" category="list-text">AWS GovCloud（US）の場合：033442085313</block>
+  <block id="c3948e9af2286480c185296c8233504b" category="summary">Cloud Managerを使用すると、ボリュームや追加のデータサービスを追加および管理するためのFSX for ONTAP 作業環境を作成または検出できます。</block>
+  <block id="56741382a48f0ad5efb57a6532876317" category="doc">Amazon FSX for ONTAP の作業環境を作成または検出します</block>
+  <block id="ce077de6f3a969e5aa4cd26e1b3b5793" category="paragraph">Cloud Managerを使用すると、ボリュームや追加のデータサービスを追加および管理するためのFSX for ONTAP 作業環境を作成または検出できます。</block>
+  <block id="1854a29768044309b55fe7b58108c6b2" category="list-text">スループット、容量、単位を選択します。スループット容量はいつでも変更できます。</block>
+  <block id="a856a2e7ff7a861c3124938689a66a62" category="paragraph">ONTAP 管理コンソールを使用してFSX forファイルシステムを作成した場合、または以前に削除した作業環境をリストアする場合は、**My Opportunities **を使用して検出するか、手動で検出できます。</block>
+  <block id="1b52b643a7dc88400af8fd712fed3d12" category="section-title">Opportunityを使って発見する</block>
+  <block id="2727507bf62cbd85fbf2b9c615630c53" category="paragraph">以前にCloud ManagerにAWSクレデンシャルを提供していた場合、* My Opportunities *は、ONTAP ファイルシステム用のFSXを自動的に検出して、Cloud Managerを使用して追加および管理することを提案します。使用可能なデータサービスを確認することもできます。</block>
+  <block id="748e7605a5624d9bdbf81964bc29f2e4" category="list-text">Cloud Managerで、* My Opportunities *タブをクリックします。</block>
+  <block id="e9ba45e021b291739ba996c9cde18a78" category="list-text">ONTAP ファイルシステムで検出されたFSXの数が表示されます。[* Discover（検出）]をクリックします</block>
+  <block id="7208d8184b0d0e6e3c7bcf475c8f9bd2" category="inline-image-macro">FSX for ONTAP のMy Opportunitiesページのスクリーンショット。</block>
+  <block id="9e4da126e3095f89c00bb676d98195d8" category="paragraph"><block ref="9e4da126e3095f89c00bb676d98195d8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9b4a4c841d4545b117e4104be254a0e8" category="list-text">1つ以上のファイルシステムを選択し、*検出*をクリックしてキャンバスに追加します。</block>
+  <block id="0187b41b8a735f30cc0556afd7387b9d" category="list-text">名前が指定されていないクラスタを選択すると、クラスタの名前を入力するよう求めるプロンプトが表示されます。</block>
+  <block id="288a9d1552741aacac0fe590629b3a7e" category="list-text">Cloud ManagerでONTAP ファイルシステムのFSXを管理するために必要なクレデンシャルがないクラスタを選択すると、必要な権限が設定されたクレデンシャルを選択するように求められます。</block>
+  <block id="1d064916590560310250a3e94aec4539" category="section-title">手動で検出</block>
+  <block id="93961f8d67912180ee53e84885a6e38b" category="paragraph">AWS管理コンソールを使用して追加したFSX for ONTAP ファイルシステムや、Cloud Managerから以前に削除したFSX for Cloudファイルシステムを手動で検出することができます。</block>
+  <block id="9ac28c312ffcaefaeb68547b62383018" category="paragraph">Cloud Managerでは、FSX for ONTAP 作業環境からNFS、CIFS、およびiSCSIのボリュームを作成および管理できます。ONTAP CLI を使用して作成したボリュームは、 FSX for ONTAP の作業環境にも表示されます。</block>
+  <block id="c0beac119c78b8228ca36d4b93ef1bc7" category="list-text">*プロトコル*：NFS、CIFS、またはiSCSIボリューム・プロトコルを選択します。</block>
+  <block id="7a641f2010297c1d06c28aad18308a5b" category="list-text">iSCSIの場合：既存のイニシエータグループを使用するか、新しいイニシエータグループを作成して、LUNに接続できます。既存のイニシエータグループをマッピングするには、オペレーティングシステムおよび1つ以上のイニシエータグループを選択します。</block>
+  <block id="7d7217d548e427bd0d76f5081e4b4cb5" category="paragraph">新しいイニシエータグループを作成します。</block>
+  <block id="6ae6d068572461cadd78494cd3954770" category="list-text">[**新規作成**]を選択します。</block>
+  <block id="6439f651e3ce60a787666dc41a8ca17f" category="list-text">使用しているオペレーティングシステムを選択します。</block>
+  <block id="16125dd1e69c3f67387e091dfbdb0104" category="inline-link-macro">ホストをLUNに接続します</block>
+  <block id="4829537a55a4319514ecedacd16c615c" category="list-text">をクリックして、1つ以上のホストiSCSI修飾名（IQN）を追加します。既存のIQNを選択するか、新しいIQNを追加できます。ボリュームのIQNを確認する方法については、を参照してください <block ref="ea6aa66bd7959c06552c511c78fe80e4" category="inline-link-macro-rx"></block>。</block>
+  <block id="ecfc70ae41156684ed148266abaf3a62" category="list-text">**イニシエータグループ名**を入力してください。</block>
+  <block id="ccb9a070caab16c4e464e89fd6afe362" category="inline-image-macro">ONTAP ボリューム作成用のiSCSI構成FSXのスクリーンショット。</block>
+  <block id="f157bba0d98c84b6de3aaefa71426f09" category="paragraph"><block ref="f157bba0d98c84b6de3aaefa71426f09" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a20dc51cbd898b34e33a20c14094ed53" category="summary">Cloud Managerを使用すると、FSX for ONTAP の作業環境を管理できます。実行環境の削除や削除を実行できます。</block>
+  <block id="faac9e60f93091e9068b8f347b36ec75" category="doc">Amazon FSX for ONTAP 作業環境を管理します</block>
+  <block id="8539ab4c6f55c58d2fab4f2b3261bde9" category="section-title">スループット容量を変更します</block>
+  <block id="4b1f2fea7e8048c8ccd3036ead1c2a76" category="paragraph">スループット容量は、ONTAP 作業環境でFSXを作成したあとにいつでも変更できます。</block>
+  <block id="e85b82fa898245e765ecb2eab8ee886e" category="paragraph">アクティブなが必要です<block ref="f8ec938ce1f3506a828c9f7802c63902" category="inline-link-rx"></block>。</block>
+  <block id="753a4005737100e35c99c30e52ef2c44" category="list-text">[*概要*（Overview *）]タブで、[*機能*（* Features *）]をクリックし</block>
+  <block id="2e68dd5f8760ab98fc603405ef786ad2" category="inline-image-macro">容量の変更の場所のスクリーンショット。</block>
+  <block id="ba4f4a5f2fc20fe299d66d82a707dcfa" category="paragraph"><block ref="ba4f4a5f2fc20fe299d66d82a707dcfa" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7ccd7b62d91207f4ba83029de9cebfce" category="inline-image-macro">鉛筆の編集アイコンの画像。</block>
+  <block id="956ab3e11e7c49feef0401b3df8ea2ef" category="list-text">鉛筆のアイコン（<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>）をクリックして、* Throughput Capacity *編集ページを開きます。</block>
+  <block id="3ce3cdf8360d5fadb6de611684221e5f" category="list-text">ドロップダウンから新しいスループット容量を選択し、「* Update *」をクリックします。この変更が反映されるまでに最大25分かかることがあり、データアクセスが中断されることはありません。</block>
+  <block id="f6dfc77133ec0d2399d3f1b82fd008fe" category="list-text">現時点で、Cloud Managerは、オンプレミスまたはCloud Volumes ONTAP からONTAP のFSXに、ONTAP のFSXからオンプレミスまたはONTAP システムの他のFSXにデータをレプリケートできます。</block>
+  <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
+  <block id="dd15e63d013ad6e70302caae66b83f6d" category="list-text">以前にCloud ManagerにAWSクレデンシャルを指定していた場合、新しい* My Opportunities *機能によって、Cloud Managerを使用して追加および管理するONTAP ファイルシステムのFSXが自動的に検出されて提案されます。また、［* My Opportunities *］タブで、利用可能なデータサービスを確認することもできます。</block>
+  <block id="6ebe96f0162b363fd765e000afd1c4f0" category="inline-link-macro">「My Opportunities（機会）」を使用して、FSX for ONTAP を検出</block>
+  <block id="9480b8170649423ab940807a0b920da2" category="paragraph"><block ref="9480b8170649423ab940807a0b920da2" category="inline-link-macro-rx"></block></block>
+  <block id="e2399171d04de4904bc9ceb3e1c97260" category="inline-link-macro">スループット容量を変更します</block>
+  <block id="c9937dd2be3306177e54f23d06f05522" category="list-text">次の操作を実行できます。 <block ref="506ff771d5601b67d5eec9e79bc3848f" category="inline-link-macro-rx"></block> ONTAP 作業環境用のFSXを作成した後であれば、いつでも作成できます。</block>
+  <block id="7699be7c50b8640b313d71cce9004797" category="inline-link-macro">データをレプリケートして同期</block>
+  <block id="2e54b9a897181c7862d708807a350694" category="list-text">次の操作を実行できます。 <block ref="8a24fd2682d2561e3f75043a6b0c8221" category="inline-link-macro-rx"></block> FSX for ONTAP をソースとして使用する、ONTAP システム用のオンプレミスおよびその他のFSXへの移行。</block>
+  <block id="42c82b44ceecde8407f75a70409e2aec" category="inline-link-macro">Cloud Managerを使用して、FSX for ONTAP にiSCSIボリュームを作成します</block>
+  <block id="d6d2f19a8b69e681e2faa33500bbff6c" category="list-text">次の操作を実行できます。 <block ref="7bd2232976707f7841c519f0d4d2c5a6" category="inline-link-macro-rx"></block>。</block>
+  <block id="4654b99a0535f374a8ff766873df50a6" category="sidebar">作業環境を作成または検出します</block>
+  <block id="6faf2fd9ba5b0e89a953f43cd89d6c46" category="sidebar">作業環境の管理</block>
+  <block id="3109e49414b9edf951cefa41b4e6edeb" category="sidebar">作業環境を管理します</block>
 </blocks>
