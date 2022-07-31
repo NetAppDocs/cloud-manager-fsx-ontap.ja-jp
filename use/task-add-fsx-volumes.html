@@ -407,6 +407,8 @@
           
 
 
+
+
     <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
   
 
@@ -506,7 +508,9 @@
         <div class="na-navbar-padding"> ONTAP には Amazon FSX を使用します</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html">
-        作業環境の作成と管理
+        作業環境を作成または検出します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-fsx-ontap/use/task-manage-working-environment.html">
+        作業環境の管理
       </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html">
         ボリュームを作成してマウント
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html">
@@ -589,7 +593,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 07:39:59 +0000">04/18/2022</time>
+    <time datetime="2022-07-31 20:00:51 +0000">07/31/2022</time>
     
   
 
@@ -610,10 +614,7 @@
 <h2 id="ボリュームを作成します">ボリュームを作成します</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Cloud Manager では、 FSX for ONTAP 作業環境から NFS ボリュームと CIFS ボリュームを作成および管理できます。ONTAP CLI を使用して作成された NFS ボリュームと CIFS ボリュームは、 FSX for ONTAP の作業環境にも表示されます。</p>
-</div>
-<div class="paragraph">
-<p>iSCSI ボリュームは、 ONTAP CLI 、 ONTAP API 、または Cloud Manager API を使用して作成し、 FSX for ONTAP 作業環境で Cloud Manager を使用して管理できます。</p>
+<p>Cloud Managerでは、FSX for ONTAP 作業環境からNFS、CIFS、およびiSCSIのボリュームを作成および管理できます。ONTAP CLI を使用して作成したボリュームは、 FSX for ONTAP の作業環境にも表示されます。</p>
 </div>
 <div class="paragraph">
 <p>必要なもの：</p>
@@ -675,7 +676,7 @@
 </div>
 </li>
 <li>
-<p>* プロトコル * ： NFS または CIFS ボリューム・プロトコルを選択します。</p>
+<p><strong>プロトコル</strong>：NFS、CIFS、またはiSCSIボリューム・プロトコルを選択します。</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -714,9 +715,6 @@
 </div>
 </li>
 </ul>
-</div>
-</li>
-</ol>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -779,15 +777,39 @@
 </li>
 <li>
 <p>ワークグループセットアップを選択した場合は、 CIFS 用に設定されているワークグループのサーバとワークグループ名を入力します。</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+</li>
+</ul>
+</div>
+</li>
 <li>
-<p>「 * 次へ * 」をクリックします。</p>
+<p>iSCSIの場合：既存のイニシエータグループを使用するか、新しいイニシエータグループを作成して、LUNに接続できます。既存のイニシエータグループをマッピングするには、オペレーティングシステムおよび1つ以上のイニシエータグループを選択します。</p>
+<div class="paragraph">
+<p>新しいイニシエータグループを作成します。</p>
+</div>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>[<strong>新規作成</strong>]を選択します。</p>
+</li>
+<li>
+<p>使用しているオペレーティングシステムを選択します。</p>
+</li>
+<li>
+<p>をクリックして、1つ以上のホストiSCSI修飾名（IQN）を追加します。既存のIQNを選択するか、新しいIQNを追加できます。ボリュームのIQNを確認する方法については、を参照してください <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connect-lun.html" target="_blank" rel="noopener">"ホストをLUNに接続します"</a>。</p>
+</li>
+<li>
+<p><strong>イニシエータグループ名</strong>を入力してください。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot-volume-protocol-iscsi.png" alt="ONTAP ボリューム作成用のiSCSI構成FSXのスクリーンショット。"></span></p>
+</div>
 </li>
 </ol>
 </div>
 </li>
-</ul>
+<li>
+<p>「 * 次へ * 」をクリックします。</p>
+</li>
+</ol>
 </div>
 </li>
 <li>

@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>Search results | NetApp Documentation</title>
+  <title>Amazon FSX for ONTAP 作業環境を管理します | NetApp Documentation</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Search results | NetApp Documentation" />
+  <meta property="og:title" content="Amazon FSX for ONTAP 作業環境を管理します | NetApp Documentation" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/ja-jp/cloud-manager-fsx-ontap/search.html" />
-	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/cloud-manager-fsx-ontap/use/task-manage-working-environment.html" />
+	<meta property="og:description" content="Cloud Managerを使用すると、FSX for ONTAP の作業環境を管理できます。実行環境の削除や削除を実行できます。" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/cloud-manager-fsx-ontap/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
-  <meta name="keywords" content=" "><meta name="translate" content="false"/><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Managerを使用すると、FSX for ONTAP の作業環境を管理できます。実行環境の削除や削除を実行できます。">
+  <meta name="keywords" content=" amazon fsx for ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput,"><!-- Icons -->
   <link rel="icon" href="/ja-jp/cloud-manager-fsx-ontap/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/ja-jp/cloud-manager-fsx-ontap/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -94,7 +94,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><link rel='stylesheet' href='/ja-jp/cloud-manager-fsx-ontap/css/prism.css' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ja-jp/cloud-manager-fsx-ontap/js/na-search.js'></script><script src='/ja-jp/cloud-manager-fsx-ontap/js/na-pagenav.js'></script><link rel='stylesheet' href='/ja-jp/cloud-manager-fsx-ontap/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/ja-jp/cloud-manager-fsx-ontap/css/prism-netapp.css' type='text/css'>
 
 
@@ -166,6 +166,20 @@
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-fsx-ontap/issues/new?body=Page%3A%20[Amazon FSX for ONTAP 作業環境を管理します](https://docs.netapp.com/ja-jp/cloud-manager-fsx-ontap/use/task-manage-working-environment.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloud-manager-fsx-ontap/images/discuss-sm.svg" alt="" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-fsx-ontap/blob/main/use/task-manage-working-environment.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloud-manager-fsx-ontap/images/edit-sm.svg" alt="" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/cloud-manager-fsx-ontap/images/article-sm.svg" alt="" class="github-icon" />寄稿者向けガイド</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">このページ</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   
   <!-- Start top_hat -->
   <div class="n-top-hat">
@@ -239,6 +253,29 @@
       </div>
 
       
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/ja-jp/cloud-manager-fsx-ontap/search.html"
+          data-type="widget" 
+          data-placeholder="ドキュメントを検索"
+          data-no-results-found="{query}に該当する結果はありません"
+          data-did-you-mean="{suggestion} を検索"
+          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?"
+          data-results-found="{hitCount} 件見つかりました"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/cloud-manager-fsx-ontap/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
     </div>
   </div>
   <div class="n-property-bar__toolbar">
@@ -253,15 +290,15 @@
       </div>
 
       <ul class="custom-dropdown-menu"><li>
-          <a href="https://docs.netapp.com/ja-jp/cloud-manager-fsx-ontap//search.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+          <a href="https://docs.netapp.com/ja-jp/cloud-manager-fsx-ontap/use/task-manage-working-environment.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap//search.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+          <a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html" target="_self"><span translate="no" class="notranslate">English</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-cn/cloud-manager-fsx-ontap//search.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+          <a href="https://docs.netapp.com/zh-cn/cloud-manager-fsx-ontap/use/task-manage-working-environment.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-tw/cloud-manager-fsx-ontap//search.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+          <a href="https://docs.netapp.com/zh-tw/cloud-manager-fsx-ontap/use/task-manage-working-environment.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ko-kr/cloud-manager-fsx-ontap//search.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-fsx-ontap/use/task-manage-working-environment.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
         </li></ul>
     </div><!-- End Language Selector -->
 
@@ -370,6 +407,8 @@
           
 
 
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
 
 
 
@@ -470,7 +509,7 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html">
         作業環境を作成または検出します
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-fsx-ontap/use/task-manage-working-environment.html">
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-fsx-ontap/use/task-manage-working-environment.html">
         作業環境の管理
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html">
         ボリュームを作成してマウント
@@ -547,31 +586,150 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Search results</h1>
+  <h1 class="n-doc__component-detail-heading">Amazon FSX for ONTAP 作業環境を管理します</h1>
 </div>
 
 
-<div id="search-demo-container" class="n-property-bar__search">
-  <div id="react-search" 
-  data-search-html="/ja-jp/cloud-manager-fsx-ontap/search.html"
-  data-type="page" 
-  data-placeholder="ドキュメントを検索" 
-  data-no-results-found="{query}に該当する結果はありません" 
-  data-did-you-mean="{suggestion} を検索" 
-  data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
-  data-results-found="{hitCount} 件見つかりました"
-  data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
-  data-error-reset="Reset Search"
-  data-sk-es-pf-indexes=""
-  data-flavor=""></div>
-  <button class="search-all-icon n-property-bar__search-toggle-button" type="button">
-    <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
-      <title>search</title>
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/cloud-manager-fsx-ontap/common/svg/sprite.svg#search"></use>
-    </svg>
-  </button>
-</div>
+<p class="page-details">
+  
+    
+    <time datetime="2022-07-31 20:00:51 +0000">07/31/2022</time>
+    
+  
 
+<span>寄稿者
+</span>
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>Cloud Managerを使用すると、FSX for ONTAP の作業環境を管理できます。実行環境の削除や削除を実行できます。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="スループット容量を変更します">スループット容量を変更します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>スループット容量は、ONTAP 作業環境でFSXを作成したあとにいつでも変更できます。</p>
+</div>
+<div class="paragraph">
+<p>アクティブなが必要です <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html" target="_blank" rel="noopener">"AWS のコネクタ"</a>。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>FSX for ONTAP 作業環境を開きます。</p>
+</li>
+<li>
+<p>[<strong>概要</strong>（Overview <strong>）]タブで、[*機能</strong>（* Features *）]をクリックし</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot-change-thruput.png" alt="容量の変更の場所のスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>鉛筆のアイコン（<span class="image"><img src="../media/icon-pencil.png" alt="鉛筆の編集アイコンの画像。"></span>）をクリックして、* Throughput Capacity *編集ページを開きます。</p>
+</li>
+<li>
+<p>ドロップダウンから新しいスループット容量を選択し、「* Update *」をクリックします。この変更が反映されるまでに最大25分かかることがあり、データアクセスが中断されることはありません。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ワークスペースから-ontap-の-fsx-を削除します">ワークスペースから ONTAP の FSX を削除します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ONTAP の FSX は、 ONTAP アカウントまたはボリュームの FSX を削除することなく、 Cloud Manager から削除できます。FSX for ONTAP の作業環境は、いつでも Cloud Manager に追加できます。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>作業環境を開きます。AWS にコネクタがない場合は、プロンプト画面が表示されます。これは無視して作業環境の削除に進んでください。</p>
+</li>
+<li>
+<p>ページの右上にあるアクションメニューを選択し、 * ワークスペースから削除 * をクリックします。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot_fsx_working_environment_remove.png" alt="Cloud Manager インターフェイスから ONTAP の FSX を削除するオプションのスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>ONTAP 用の FSX を Cloud Manager から削除するには、 * Remove * をクリックします。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ontap-作業環境の-fsx-を削除します">ONTAP 作業環境の FSX を削除します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ONTAP の FSX は、 Cloud Manager から削除できます。</p>
+</div>
+<div class="ulist">
+<div class="title">作業を開始する前に</div>
+<ul>
+<li>
+<p>実行する必要があります <a href="task-manage-fsx-volumes.html#delete-volumes">"すべてのボリュームを削除します"</a> ファイルシステムに関連付けられています。</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-fsx-ontap/images/note.svg" alt="注記">
+</td>
+<td class="content">
+ボリュームを削除または削除するには、 AWS でアクティブなコネクタが必要になります。
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>障害ボリュームが含まれている作業環境は削除できません。ONTAP ファイルシステムの FSX を削除する前に、 AWS 管理コンソールまたは CLI を使用して障害ボリュームを削除する必要があります。</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-fsx-ontap/images/warning.svg" alt="警告">
+</td>
+<td class="content">
+この操作を実行すると、作業環境に関連付けられているすべてのリソースが削除されます。この操作を元に戻すことはできません。
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>作業環境を開きます。AWS にコネクタがない場合は、プロンプト画面が表示されます。これは無視して作業環境の削除に進んでください。</p>
+</li>
+<li>
+<p>ページの右上にあるアクションメニューを選択し、 * 削除 * をクリックします。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot_fsx_working_environment_delete.png" alt="Cloud Manager インターフェイスからの ONTAP の FSX の削除オプションのスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>作業環境の名前を入力し、 * 削除 * をクリックします。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
 
     </article>
     <!-- Page Container -->
@@ -719,29 +877,4 @@
     <script src='/ja-jp/cloud-manager-fsx-ontap/js/www-ntap.js'></script>
     <script src='/ja-jp/cloud-manager-fsx-ontap/js/tabbed-blocks.js'></script>
     <script src='/ja-jp/cloud-manager-fsx-ontap/js/sidebar.js'></script>
-  </body><script>
-    /*
-      if(hasParameter(window.location.search,'q')) {
-        var queryString = decodeURI(getParameter(window.location.search, 'q'));
-        document.getElementsByClassName("sk-search-box__text")[0].setAttribute("value", queryString);
-      }
-
-      function getParameter(searchString,param) {
-        var params = searchString.split('?&');
-        for(var i=0;i<params.length;i++) {
-          var paramIndex = params[i].indexOf(param+"=");
-          if(paramIndex != -1) {
-            return params[i].substring(paramIndex+param.length+1);
-          }
-        }
-
-        return "";
-      }
-
-      function hasParameter(searchString,param) {
-        searchString = searchString || "";
-        param = param || "";
-        return (searchString.indexOf("?"+param+"=") != -1 || searchString.indexOf("&"+param+"=") != -1);
-      }
-      */
-  </script></html>
+  </body></html>

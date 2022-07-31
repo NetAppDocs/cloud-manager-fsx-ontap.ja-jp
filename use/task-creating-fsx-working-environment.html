@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>Amazon FSX for ONTAP 作業環境の作成と管理 | NetApp Documentation</title>
+  <title>Amazon FSX for ONTAP の作業環境を作成または検出します | NetApp Documentation</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Amazon FSX for ONTAP 作業環境の作成と管理 | NetApp Documentation" />
+  <meta property="og:title" content="Amazon FSX for ONTAP の作業環境を作成または検出します | NetApp Documentation" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/ja-jp/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html" />
-	<meta property="og:description" content="Cloud Manager では、 ONTAP 作業環境用の FSX を作成して、ボリュームの追加や追加のデータサービスの管理を行うことができます。" />
+	<meta property="og:description" content="Cloud Managerを使用すると、ボリュームや追加のデータサービスを追加および管理するためのFSX for ONTAP 作業環境を作成または検出できます。" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/cloud-manager-fsx-ontap/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Manager では、 ONTAP 作業環境用の FSX を作成して、ボリュームの追加や追加のデータサービスの管理を行うことができます。">
-  <meta name="keywords" content=" amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Managerを使用すると、ボリュームや追加のデータサービスを追加および管理するためのFSX for ONTAP 作業環境を作成または検出できます。">
+  <meta name="keywords" content=" amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover"><!-- Icons -->
   <link rel="icon" href="/ja-jp/cloud-manager-fsx-ontap/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/ja-jp/cloud-manager-fsx-ontap/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-fsx-ontap/issues/new?body=Page%3A%20[Amazon FSX for ONTAP 作業環境の作成と管理](https://docs.netapp.com/ja-jp/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloud-manager-fsx-ontap/images/discuss-sm.svg" alt="" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-fsx-ontap/blob/main/use/task-creating-fsx-working-environment.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloud-manager-fsx-ontap/images/edit-sm.svg" alt="" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/cloud-manager-fsx-ontap/images/article-sm.svg" alt="" class="github-icon" />寄稿者向けガイド</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-fsx-ontap/issues/new?body=Page%3A%20[Amazon FSX for ONTAP の作業環境を作成または検出します](https://docs.netapp.com/ja-jp/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloud-manager-fsx-ontap/images/discuss-sm.svg" alt="" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-fsx-ontap/blob/main/use/task-creating-fsx-working-environment.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloud-manager-fsx-ontap/images/edit-sm.svg" alt="" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/cloud-manager-fsx-ontap/images/article-sm.svg" alt="" class="github-icon" />寄稿者向けガイド</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">このページ</div>
@@ -413,6 +413,8 @@
 
 
 
+
+
         </li>
       </ul>
     
@@ -506,7 +508,9 @@
         <div class="na-navbar-padding"> ONTAP には Amazon FSX を使用します</div>
       </a>
       <ul><li class="  active "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html">
-        作業環境の作成と管理
+        作業環境を作成または検出します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-fsx-ontap/use/task-manage-working-environment.html">
+        作業環境の管理
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html">
         ボリュームを作成してマウント
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html">
@@ -582,14 +586,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Amazon FSX for ONTAP 作業環境の作成と管理</h1>
+  <h1 class="n-doc__component-detail-heading">Amazon FSX for ONTAP の作業環境を作成または検出します</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-07-04 15:18:39 +0000">07/04/2022</time>
+    <time datetime="2022-07-31 20:00:51 +0000">07/31/2022</time>
     
   
 
@@ -602,7 +606,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>Cloud Manager を使用すると、ボリュームや追加のデータサービスを追加および管理するために、 ONTAP 作業環境用の FSX を作成および管理できます。</p>
+<p>Cloud Managerを使用すると、ボリュームや追加のデータサービスを追加および管理するためのFSX for ONTAP 作業環境を作成または検出できます。</p>
 </div>
 </div>
 </div>
@@ -743,7 +747,7 @@
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>スループット、容量、単位を選択します。</p>
+<p>スループット、容量、単位を選択します。スループット容量はいつでも変更できます。</p>
 </li>
 <li>
 <p>必要に応じて、 IOPS 値を指定できます。IOPS の値を指定しない場合、 Cloud Manager は、入力した合計容量の 1GiB あたりの 3 IOPS に基づいてデフォルト値を設定します。たとえば、合計容量に 2 、 000GiB と入力した場合、 IOPS の値が指定されていなければ、有効な IOPS の値は 6 、 000 に設定されます。</p>
@@ -802,7 +806,59 @@
 <h2 id="既存の-fsx-for-ontap-ファイルシステムを検出します">既存の FSX for ONTAP ファイルシステムを検出します</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>AWS 管理コンソールを使用して ONTAP ファイルシステムの FSX を作成した場合、または以前に削除した作業環境をリストアする場合は、 Cloud Manager を使用して検出できます。</p>
+<p>ONTAP 管理コンソールを使用してFSX forファイルシステムを作成した場合、または以前に削除した作業環境をリストアする場合は、<strong>My Opportunities </strong>を使用して検出するか、手動で検出できます。</p>
+</div>
+<div class="sect2">
+<h3 id="opportunityを使って発見する">Opportunityを使って発見する</h3>
+<div class="paragraph">
+<p>以前にCloud ManagerにAWSクレデンシャルを提供していた場合、* My Opportunities *は、ONTAP ファイルシステム用のFSXを自動的に検出して、Cloud Managerを使用して追加および管理することを提案します。使用可能なデータサービスを確認することもできます。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>Cloud Managerで、* My Opportunities *タブをクリックします。</p>
+</li>
+<li>
+<p>ONTAP ファイルシステムで検出されたFSXの数が表示されます。[* Discover（検出）]をクリックします</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot-opportunities.png" alt="FSX for ONTAP のMy Opportunitiesページのスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>1つ以上のファイルシステムを選択し、*検出*をクリックしてキャンバスに追加します。</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-fsx-ontap/images/note.svg" alt="注記">
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>名前が指定されていないクラスタを選択すると、クラスタの名前を入力するよう求めるプロンプトが表示されます。</p>
+</li>
+<li>
+<p>Cloud ManagerでONTAP ファイルシステムのFSXを管理するために必要なクレデンシャルがないクラスタを選択すると、必要な権限が設定されたクレデンシャルを選択するように求められます。</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="手動で検出">手動で検出</h3>
+<div class="paragraph">
+<p>AWS管理コンソールを使用して追加したFSX for ONTAP ファイルシステムや、Cloud Managerから以前に削除したFSX for Cloudファイルシステムを手動で検出することができます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot_fsx_working_environment_select.png" alt="AWS リージョンと作業環境を選択する際のスクリーンショット"></span></p>
 </div>
 <div class="olist arabic">
 <div class="title">手順</div>
@@ -833,94 +889,6 @@
 <div class="paragraph">
 <p><span class="image"><img src="../media/screenshot_fsx_working_environment_select.png" alt="AWS リージョンと作業環境を選択する際のスクリーンショット"></span></p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="ワークスペースから-ontap-の-fsx-を削除します">ワークスペースから ONTAP の FSX を削除します</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>ONTAP の FSX は、 ONTAP アカウントまたはボリュームの FSX を削除することなく、 Cloud Manager から削除できます。FSX for ONTAP の作業環境は、いつでも Cloud Manager に追加できます。</p>
-</div>
-<div class="olist arabic">
-<div class="title">手順</div>
-<ol class="arabic">
-<li>
-<p>作業環境を開きます。AWS にコネクタがない場合は、プロンプト画面が表示されます。これは無視して作業環境の削除に進んでください。</p>
-</li>
-<li>
-<p>ページの右上にあるアクションメニューを選択し、 * ワークスペースから削除 * をクリックします。</p>
-<div class="paragraph">
-<p><span class="image"><img src="../media/screenshot_fsx_working_environment_remove.png" alt="Cloud Manager インターフェイスから ONTAP の FSX を削除するオプションのスクリーンショット。"></span></p>
-</div>
-</li>
-<li>
-<p>ONTAP 用の FSX を Cloud Manager から削除するには、 * Remove * をクリックします。</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="ontap-作業環境の-fsx-を削除します">ONTAP 作業環境の FSX を削除します</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>ONTAP の FSX は、 Cloud Manager から削除できます。</p>
-</div>
-<div class="ulist">
-<div class="title">作業を開始する前に</div>
-<ul>
-<li>
-<p>実行する必要があります <a href="task-manage-fsx-volumes.html#delete-volumes">"すべてのボリュームを削除します"</a> ファイルシステムに関連付けられています。</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloud-manager-fsx-ontap/images/note.svg" alt="注記">
-</td>
-<td class="content">
-ボリュームを削除または削除するには、 AWS でアクティブなコネクタが必要になります。
-</td>
-</tr>
-</table>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>障害ボリュームが含まれている作業環境は削除できません。ONTAP ファイルシステムの FSX を削除する前に、 AWS 管理コンソールまたは CLI を使用して障害ボリュームを削除する必要があります。</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloud-manager-fsx-ontap/images/warning.svg" alt="警告">
-</td>
-<td class="content">
-この操作を実行すると、作業環境に関連付けられているすべてのリソースが削除されます。この操作を元に戻すことはできません。
-</td>
-</tr>
-</table>
-</div>
-<div class="olist arabic">
-<div class="title">手順</div>
-<ol class="arabic">
-<li>
-<p>作業環境を開きます。AWS にコネクタがない場合は、プロンプト画面が表示されます。これは無視して作業環境の削除に進んでください。</p>
-</li>
-<li>
-<p>ページの右上にあるアクションメニューを選択し、 * 削除 * をクリックします。</p>
-<div class="paragraph">
-<p><span class="image"><img src="../media/screenshot_fsx_working_environment_delete.png" alt="Cloud Manager インターフェイスからの ONTAP の FSX の削除オプションのスクリーンショット。"></span></p>
-</div>
-</li>
-<li>
-<p>作業環境の名前を入力し、 * 削除 * をクリックします。</p>
-</li>
-</ol>
 </div>
 </div>
 </div>
